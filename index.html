@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="fr" class="h-100 translated-ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <!--- attention ne pas oublier cette meta sous peine de ne pas afficher correctement les grilles bootstrap --->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="assets/fontAwesome/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+        crossorigin="anonymous">
+    </script>
+    
+    
+    
+
+    <title>PortFolio L.Y</title>
+</head>
+
+<body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+        <section class="container">
+            <header class="row">
+                <div class="col-lg-2">
+                    <img id="photo-inner" src="./assets/media/images/moi.jpg" alt="un homme" height="180" width="180">
+                </div>
+                <!-- /********************* partie info personnel *****************************/-->
+                <div class="col-lg-8 m-auto" id="info-personnel">
+                    <h3 class="col">YAN-SIN-HA-YEUNG Jean Laily</h3>
+                    <p class="col">
+                        Développeur Web et Web mobile
+                    </p>
+                    <p class="col">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, ullam..
+                    </p>
+                </div>
+            </header>
+        </section>
+        
+        <div id="menu" class="container">
+            <nav class="navbar navbar-expand-lg navbar-light m-auto nav-tabs">
+                <div class="col-12 px-0 py-0 menuDrop d-lg-none d-md-block">
+                <a class="navbar-brand .d-none .d-md-block " href="#">Menu</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul id="tabs" class="navbar-nav col-12 m-auto justify-content-center">
+                        <li class="nav-item col-lg-2 col-2 icon-1">
+                            <a class="nav-link" href="#"><i class="fas fa-user iconeBar d-none d-lg-block"></i>
+                                <div class="text-left text-lg-center">Profil</div>
+                            </a>
+                        </li>
+                        <li class="nav-item col-lg-2 col-2 icon-2">
+                            <a class="nav-link" href="#"><i class="fas fa-award iconeBar d-none d-lg-block"></i>
+                                <div class="text-left text-lg-center">Résumer</div>
+                            </a>
+                        </li>
+                        <li class="nav-item col-lg-2 col-2 icon-3">
+                            <a class="nav-link" href="#"><i class="fab fa-wpexplorer iconeBar d-none d-lg-block"></i>
+                                <div class="text-left text-lg-center">Portfolio</div>
+                            </a>
+                        </li>
+                        <li class="nav-item col-lg-2 col-2 icon-4">
+                            <a class="nav-link" href="#"><i class="fas fa-paper-plane iconeBar d-none d-lg-block"></i>
+                                <div class="text-left text-lg-center">Contact</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- ici manipulation du dom pour afficher les différentes vues selon l'onglet choisi-->
+        <section id="profilGeneral">
+            <div class="container">
+                <br>
+                    <h2 class="col-12">************** <i class="fas fa-marker"></i> **************</h2>
+                <article>
+                      <!-- Formation Actuellement -->
+                    <!-- <div id="resumer" name="resume">
+                        <div class="container desc">
+                            <div class="row">
+                                <div class="col-2 offset-1">
+                                    <h4><i class="fa fa-spinner"></i> En cours</h4>
+                                </div>
+            
+                                <div class="col-6">
+                                    <p>
+                                        <t>Stagiaire Digital Coder</t><br />Centre AFPAR<br /><i>7 mois</i>
+                                    </p>
+                                </div>
+            
+                                <div class="col-3">
+                                    <p>
+                                        <sm>Fin de formation en Mars 2020</sm><br />
+                                        <imp>
+                                            > <sm>en cours</sm>
+                                        </imp>
+                                    </p>
+                                </div>
+                            </div>
+                            <hr>
+                        </div> 
+                    </div> -->
+            
+                    <!-- Expériences -->
+                    <div class="container desc">
+                        <div class="row">
+                            <div class="col-lg-2 offset-lg-1">
+                                <h5 class="text-decoration-underline"><i class="fa fa-users d-none d-lg-block"></i>Expériences</h5>
+                            </div>
+                            <!-- 1er block expérience -->
+                            <div class="col-lg-6 col">
+                                <p>
+                                    <t>Stage INOTECH-OI</t><br />
+                                    <md>Bras-Panon</md>
+                                </p>
+                            </div>
+                            <div class="col-lg-3 col-3">
+                                <p>
+                                    <sm>Octobre 2020 - Janvier 2021</sm>
+                                </p>
+                            </div>
+                            <div class="offset-lg-3 col-lg-6 col-12">
+                                <more>
+                                    <ul class="list-unstyled">
+                                        <li>Création d'un site web interactif via WordPress</li>
+                                        <li>Mise en place d'un gestionnaire de compte utilisateur avec validation exclusif par l'administrateur</li>
+                                        <li>Ajout d'un planning de réservation d'activités</li> 
+                                    </ul>
+                                </more>
+                                <br>
+                            </div>
+                            <!-- 2eme block expérience -->
+                            <div class="offset-lg-3 col-lg-6 col">
+                                <p>
+                                    <t>Stage Digital Coder</t><br />
+                                    <md>Mairie Saint-André</md>
+                                </p>
+                            </div>
+                            <div class="col-lg-3 col-3">
+                                <p>
+                                    <sm>Février 2020</sm>
+                                </p>
+                            </div>
+                            <div class="offset-lg-3 col-lg-6 col-12">
+                                <more>
+                                    <ul class="list-unstyled">
+                                        <li>Création d'un site web interactif via WordPress</li>
+                                        <li>Mise en place d'un gestionnaire de compte utilisateur avec validation exclusif par l'administrateur</li>
+                                        <li>Ajout d'un planning de réservation d'activités</li> 
+                                    </ul>
+                                </more>
+                                <br>
+                            </div>
+
+                            <!-- 3eme block expérience -->
+                            <div class="offset-lg-3 col-lg-6 col ">
+                                <p>
+                                    <t>Gestionnaire du parc automobile</t><br />
+                                    <md>CIREST Saint-Benoît</md>
+                                </p>
+                            </div>
+                            <div class="col-lg-3 col-4">
+                                <p>
+                                    <sm>Mai 2015 - Mai 2017</sm>
+                                </p>
+                            </div>
+                            <div class="offset-lg-3 col-lg-6 col-12">
+                                <more>
+                                    <ul class="list-unstyled">
+                                        <li>Gestionnaire du planning des réservations</li>
+                                        <li>responsable de la gestion des clés de véhicule</li>
+                                        <li>Gestion & relation avec les prestataires de service (location véhicule, Contrôle technique, Garage)</li>
+                                        <li>Porteur de plusieurs projets fonctionnels, pour l'amélioration quotidien du personnels et de l'équipe</li>
+                                    </ul>
+                                </more>
+                            </div>
+                        </div><!--/.row -->
+                        <br>
+                        <hr> <!-- affiche une ligne de séparation-->
+                    </div> <!--/.container -->
+            
+            
+                    <!--Diplôme DESCRIPTION -->
+                    <div class="container desc">
+                        <div class="row">
+                            <div class="col-lg-2 offset-lg-1"><!-- Catégorie -->
+                                <h5 class="text-decoration-underline">
+                                    <i class="fa fa-graduation-cap d-none d-lg-block"></i> Diplôme
+                                </h5>
+                            </div> <!-- / Catégorie -->
+
+                            <!-- 1er block -->
+                            <div class="col-lg-6 col">
+                                <p>
+                                    <t>TP Développeur Web et Web Mobile</t><br /> 
+                                    <md>AFPAR Saint-André</md>
+                                </p>
+                            </div>
+                            <div class="col-lg-3 col-4">
+                                <p><sm>Juin 2020 - Février 2021</sm></p>
+                            </div>
+                            <div class="offset-lg-3 col-lg-6 col-12">
+                                <span>Développer du front-end:</span>
+                                <more>
+                                    <ul class="list-unstyled">
+                                        <li>- Maquetter une application</li>
+                                        <li>- Réaliser une interface utilisateur statique & responsive.</li>
+                                        <li>- Développer une interface utilisateur dynamique.</li>
+                                    </ul>
+                                </more>
+                                <span>Développer du back-end:</span>
+                                <more>
+                                    <ul class="list-unstyled">
+                                        <li>- Concevoir & modéliser une base de données</li>
+                                        <li>- Développer les composant d'accès aux données</li>
+                                        <li>- Développer la partie back-end d'une application web et web mobile</li>
+                                        <li>- Élaborer et mettre en œuvre des composant d'une application de gestion de contenue ou de e-commerce</li>
+                                    </ul>
+                                </more>
+                                <span>Compétence transverses:</span>
+                                <more>
+                                    <ul class="list-unstyled">
+                                        <li>Utilisation de la langue anglais technique au quotidien</li>
+                                        <li>rédiger les documentations</li>
+                                        <li>gestion de temps ( méthode agile )</li>
+                                    </ul>
+                                </more>
+                            <br>
+                            </div>
+                            
+                            <!-- 2eme block -->
+                            <div class="offset-lg-3 col-lg-6 col">
+                                <p>
+                                    <t>Certification Digital Coder</t><br /> 
+                                    <md>AFPAR Saint-André</md>
+                                </p>
+                            </div>
+                            <div class="col-lg-3 col-4 ">
+                                <p><sm>Août 2019 - Mars 2020</sm></p>
+                            </div>
+                            <div class="offset-lg-3 col-lg-6 col-12">
+                                <more>
+                                    <ul class="list-unstyled">
+                                        <li>Découverte du métier de développeur</li>
+                                        <li>Découverte des bases du développement web et des algorithmes</li>
+                                        <li>Découverte et mise en place de serveur local pour un environnement linux</li>
+                                        <li>Certification des langages suivant : HTML5, CSS3, JavaScript, Bootstrap 4</li>
+                                        <li>Découverte des bases du langages PHP 7</li>
+                                    </ul>
+                                </more>
+                            </div>
+                            <br>
+                            <div class="offset-lg-3 col-lg-6 col">
+                                <p>
+                                    <t>BP Mécanicien Réparateur Automobile</t><br />
+                                    <md>AFPA Brest</md>
+                                </p>
+                            </div>
+                            <div class="col-lg-3 col-4 ">
+                                <p><sm>Octobre 2013 - Avril 2014</sm></p>
+                            </div>
+                            <div class="offset-lg-3 col-lg-6 col-12">
+                                <more>
+                                    <ul class="list-unstyled">
+                                        <li>Contrôle et recherche de panne</li>
+                                        <li>Réparation & changement des pièces d'usures</li>
+                                        <li>Contrôle et réglage de la géométrie des trains</li>
+                                        <li>Respect des normes et des recommendation de sécurité</li>
+                                    </ul>
+                                </more>
+                            </div>
+                            <br>
+                            <div class="offset-lg-3 col-lg-6 col">
+                                <p>
+                                    <t>BEP Logistique & Commercialisation </t><br />
+                                    <md>FODENO Dieppe</md>
+                                </p>
+                            </div>
+                            <div class="col-lg-3 col-4 ">
+                                <p><sm>Octobre 2008 - Mai 2009</sm></p>
+                            </div>
+                            <div class="offset-lg-3 col-lg-6 col-12">
+                                <more>
+                                    <ul class="list-unstyled">
+                                        <li>Gestion de stock et de l'inventaire</li>
+                                        <li>Préparation des commandes</li>
+                                        <li>Conditionnement des colis</li>
+                                        <li>Caces 1-3-5</li> 
+                                    </ul>
+                                </more>
+                            </div>       
+                        </div><!--/.row -->
+                    </div><!--/.container -->
+                </article><!--/article-->
+            
+            </div>
+        </section>
+
+        <section id="contentResumer">
+            <!--SKILLS DESCRIPTION -->
+                <div class="container">
+                    <br />
+                    <h2 class="text-center">************** <i class="fas fa-graduation-cap"></i> **************</h2>
+                    <br />
+                    <div class="row align-items-center">
+                        <div class="col-1 font-weight-bold"></div>
+                        <div class="progress col-10 m-auto border border-dark px-0 py-0" style="height:20px;">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">Débutant</div>
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">Débutant confirmé</div>
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">Intermédiaire</div>
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">Avancé</div>
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">Expert</div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="column align-items-center">
+                        <div class="row align-items-center">
+                        <div class="col-1 px-sm-5 col-lg-1">
+                            <img src="./assets/media/images/logo/html-css.jpg" class="m-auto" alt="html-css_logo" width="80">
+                        </div>
+                        <div class="progress col-2 col-lg-3 border border-dark px-0 py-0" style="height:20px;">
+                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        </div>
+                    <!-- </div> -->
+                    <br />
+                    <!-- <div class="row align-items-center"> -->
+                        <div class="col-2">
+                            <img src="./assets/media/images/logo/JS.png" alt="JavaScript_logo" width="80">
+                        </div>
+                        <div class="progress col-3 col-lg-3 border border-dark px-0 py-0" style="height:20px;">
+                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    <!-- </div> -->
+                    <br />
+                    <!-- <div class="row align-items-center"> -->
+                        <div class="col-2">
+                            <img src="./assets/media/images/logo/bootstrap_logo.png" alt="BS_logo" width="60">
+                        </div>
+                        <div class="progress col-3 col-lg-3 border border-dark px-0 py-0" style="height:20px;">
+                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row align-items-center">
+                        <div class="col-1">
+                            <img src="./assets/media/images/logo/wordpress-logo.png" alt="WP_logo" width="80">
+                        </div>
+                        <div class="progress col-10 m-auto border border-dark px-0 py-0" style="height:20px;">
+                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row align-items-center">
+                        <div class="col-1">
+                            <img src="./assets/media/images/logo/php.png" alt="PHP_logo" width="80">
+                        </div>
+                        <div class="progress col-10 m-auto border border-dark px-0 py-0" style="height:20px;">
+                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <br />
+                    <!--  exemple test
+                        <div class="col-lg-3 col-lg-offset-3 centered">
+                            <canvas id="htmlcss" height="130" width="130"></canvas>
+                            <p>HTML/CSS</p>
+                            <br>
+                        </div> -->
+                    <hr />
+                    <div id="allcard" class="row">
+                        <div class="col">
+                            <div class="card_one" style="width: 20rem;">
+                                <div class="zoom">
+                                    <img src="./assets/media/images/certificat/CR1.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Fonctionnement des algorithmes</h6>
+                                        <p class="card-text">Certificat de réussite obtenu sur OpenClassRoom.</p>
+                                        <!-- <a href="./assets/media/documents/certificat_Algo.pdf" class="btn btn-primary">TéléchargerPDF</a>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="col">
+                            <div class="card_two" style="width: 20rem;">
+                                <div class="zoom">
+                                    <img src="./assets/media/images/certificat/CR2.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Apprenez à créer votre site en HTML6 et CSS3</h6>
+                                        <p class="card-text">Certificat de réussite obtenu sur OpenClassRoom.</p>
+                                        <!-- <a href="./assets/media/documents/certificat_Algo.pdf" class="btn btn-primary">TéléchargerPDF</a>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card_three" style="width: 20rem;">
+                                <div class="zoom">
+                                    <img src="./assets/media/images/certificat/CR3.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Apprenez à coder avec JavaScript</h6>
+                                        <p class="card-text">Certificat de réussite obtenu sur OpenClassRoom.</p>
+                                        <!-- <a href="./assets/media/documents/certificat_Algo.pdf" class="btn btn-primary">TéléchargerPDF</a>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card_for" style="width: 20rem;">
+                                <div class="zoom">
+                                    <img src="./assets/media/images/certificat/CR4.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Prenez en main Bootstrap 3.0</h6>
+                                        <p class="card-text">Certificat de réussite obtenu sur OpenClassRoom.</p>
+                                        <!-- <a href="./assets/media/documents/certificat_Algo.pdf" class="btn btn-primary">TéléchargerPDF</a>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card_five" style="width: 20rem;">
+                                <div class="zoom">
+                                    <img src="./assets/media/images/certificat/CR5.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Créer son premier site WordPress</h6>
+                                        <p class="card-text">Certificat de réussite obtenu sur OpenClassRoom.</p>
+                                        <!-- <a href="./assets/media/documents/certificat_Algo.pdf" class="btn btn-primary">TéléchargerPDF</a>-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="col">
+                            <div class="card_six" style="width: 20rem;">
+                                <div class="zoom">
+                                    <!-- <img src="" class="card-img-top" alt="..."> -->
+                                    <div class="card-body">
+                                        <h6 class="card-title"></h6>
+                                        <p class="card-text"></p>
+                                        <!-- <a href="./assets/media/documents/certificat_Algo.pdf" class="btn btn-primary"></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--/.row -->
+                    <br/>
+                </div>
+        </section>
+
+        <section id="portfolioGlobal">
+                <div class="container">
+                    <br> <!-- espacement -->
+                    <h2>************** <i class="fas fa-box-open"></i> **************</h2>
+                    <div class="row m-auto py-5">
+                    <!-- block-1 start-->
+                        <div class="col">
+                            <br> <!-- espacement -->
+                            <h4>CV html</h4>                
+                            <div class="imgchange-1 m-auto">
+                                <div class="zoom-1">
+                                    <a href="./assets/media/projets/CV_html/CV.html"><img src="./assets/media/images/FaceCVHtml.PNG" width="300" height="200"></a>
+                                </div>
+                            </div>
+                            <br> <!-- espacement -->
+                            <h4>Projet php 1</h4>
+                            <div class="imgchange-2 m-auto">
+                                <div class="zoom-1">
+                                    <a href="http://localhost/portfolio/assets/media/projets/projetPHP1/connect.php"><img src="./assets/media/images/ProjetPhp1.PNG" width="300" height="200"></a>
+                                </div>
+                            </div>
+                            <br> <!-- espacement -->
+                        </div>
+                    <!-- block-1 end-->
+                    <!-- block-2 start-->    
+                        <div class="col">
+                            <br> <!-- espacement -->
+                            <h4>Projet php 2</h4>
+                            <div class="imgchange-1 m-auto">
+                                <div class="zoom-1">
+                                    <a href="http://localhost/portfolio/assets/media/projets/projetBinomePHP/index.php"><img src="./assets/media/images/ProjetPHPBinome.PNG" width="300" height="200"></a>
+                                </div>
+                            </div>
+                            <br> <!-- espacement -->
+                            <h4>TP javascript</h4>
+                            <div class="imgchange-2 m-auto">
+                                <div class="zoom-1">
+                                    <a href="http://localhost/portfolio/assets/media/projets/TP_OpenClass_JS/html/contacts.html"><img src="./assets/media/images/contactJS.PNG" width="300" height="200"></a>
+                                </div>
+                            </div>
+                            <br> <!-- espacement -->
+                        </div>
+                    <!-- block-1 end-->
+                    <!-- block-3 start-->                
+                        <div class="col">
+                            <br> <!-- espacement -->
+                            <h4>Projet Access</h4>
+                            <div class="imgchange-1 m-auto">
+                                <div class="zoom-1">
+                                    <a href="http://localhost/portfolio/assets/media/projets/projetAccess/FormulaireEtRequeteV2.0.accdb" target="_blank"><img src="./assets/media/images/ecranAccueil.PNG" width="300" height="200"></a>
+                                </div>
+                            </div>
+                            <br> <!-- espacement -->
+                            <h4>Projet Excel</h4>
+                            <div class="imgchange-2 m-auto">
+                                <div class="zoom-1">
+                                    <a href="http://localhost/portfolio/assets/media/projets/projetExcel/devisAutomatiser.xlsx"><img src="./assets/media/images/devisExcel.PNG" width="300" height="200"></a>
+                                </div>
+                            </div>
+                            <br> <!-- espacement -->
+                        </div>
+                        <!-- block-3 end-->
+                    </div>
+                    <!-- fin row-->
+                </div>
+                <!-- fin container-->
+        </section>
+
+        <section id="contactForm">
+                <!--container -->
+                <div class="container">
+                    <br/>
+                    <h2>************** <i class="fas fa-mail-bulk"></i> **************</h2>
+                    <br/>
+                    <!--row -->
+                    <div class="row justify-content-center py-5">                        
+                        <div id="infocontact" class="col">
+                            <h5>ME CONTACTER</h5>
+                            <br /> 
+                            <p>
+                                <t>Social Links</t><br />
+                                <a href="#"><i class="fab fa-google"></i></a>
+                                <a href="https://www.facebook.com/jean.yansin"><i class="fab fa-facebook"></i></a>
+                                <a href="https://www.linkedin.com/in/jean-laily-yan-sin-ha-yeung-b275901a0/"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://github.com/Jean-Laily"><i class="fab fa-github"></i></a>
+                            </p>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <t>Email :</t> <a class="text-decoration-none" href="mailto:jean.yansin@gmail.com"> <br /> jean.yansin@gmail.com <br /></a>
+                                </li>
+
+                                <li>
+                                    <t>Adresse :</t> <br /> 2690 Chemin du centre, porte 30 résidence les fougères <br />
+                                </li>
+
+                                <li>
+                                    <t>Code postal :</t><br /> 97440 Saint-André, Réunion. <br />
+                                </li>
+
+                                <li>
+                                    <t>Téléphone :</t><br /> 0262 41 12 15 <br />
+                                </li>
+
+                                <li>
+                                    <t>Tel Portable :</t><br /> 0693 61 11 14 <br />
+                                </li>
+                            </ul>                            
+                        </div>
+                        <div class="col d-none d-md-block">
+                            <div class="maps">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1863.0223491246356!2d55.66028655321942!3d-20.950720051267528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x217887dcf8da7d11%3A0xbf8c4634a7397b39!2s2690%20Chemin%20du%20Ctre%2C%20R%C3%A9union!5e0!3m2!1sfr!2sfr!4v1583043320496!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;"></iframe>  
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.row -->
+                </div>
+                <!--/.container -->
+        </section>
+        <br/>
+        <footer class=" footer text-white-50 mt-auto py-3 bg-dark fixed-bottom">
+            <div class="text-center">
+                <small>Copyright &copy; 2020 <strong>Laily YAN-SIN-HA-YEUNG. </strong> All Right Reserved</small>
+            </div>
+        </footer>
+    </main>
+    <script src="js/main.js"></script>
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    </body>
+</html>
+
+ 
