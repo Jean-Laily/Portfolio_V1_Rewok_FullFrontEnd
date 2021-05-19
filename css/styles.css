@@ -55,6 +55,11 @@ article {
 
 }
 
+#menu{
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
 
 
 /* *********************************** Vue Profil 2 / description expérience ************************************* */
@@ -86,10 +91,16 @@ article {
 
 sm {
     font-size: 13px;
+    font-style: italic;
 }
 
 md{
     font-size: 15px;
+}
+span{
+    font-style: oblique;
+    text-decoration: underline;
+    margin-top: 20px;
 }
 
 .profil {
@@ -127,7 +138,7 @@ md{
 
 
 
-/****************************  parti diplome en card *****************************/
+/****************************  parti diplôme en card *****************************/
 #allcard {
     border: 4px double silver;
 }
@@ -165,12 +176,6 @@ md{
 
 
 /* ************************************* Contact Form *********************************** */
-/* @media screen and ( max-width: 766px){
-    .maps{
-       display: none;
-    }
-} */
-
 
 .maps
 {
@@ -186,8 +191,6 @@ t
 
 
 /* ***********************************  Barre de navigation **************************** */
-
-
 
 .nav-link i {
     color: rgb(49, 41, 255);

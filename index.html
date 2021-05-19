@@ -45,7 +45,7 @@
                 <div class="col-12 px-0 py-0 menuDrop d-lg-none d-md-block">
                 <a class="navbar-brand .d-none .d-md-block " href="#">Menu</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <div class="navbar-toggler-icon"></div>
                 </button>
                 </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -75,11 +75,10 @@
             </nav>
         </div>
 
-        <!-- ici manipulation du dom pour afficher les différentes vues selon l'onglet choisi-->
         <section id="profilGeneral">
             <div class="container">
                 <br>
-                    <h2 class="col-12">************** <i class="fas fa-marker"></i> **************</h2>
+                <h2 class="col-12 text-primary">************** <i class="fas fa-marker"></i> **************</h2>
                 <article>
                       <!-- Formation Actuellement -->
                     <!-- <div id="resumer" name="resume">
@@ -90,18 +89,15 @@
                                 </div>
             
                                 <div class="col-6">
-                                    <p>
-                                        <t>Stagiaire Digital Coder</t><br />Centre AFPAR<br /><i>7 mois</i>
-                                    </p>
+                                    <t>Stagiaire Digital Coder</t><br />Centre AFPAR<br /><i>7 mois</i>
                                 </div>
             
                                 <div class="col-3">
-                                    <p>
-                                        <sm>Fin de formation en Mars 2020</sm><br />
-                                        <imp>
-                                            > <sm>en cours</sm>
-                                        </imp>
-                                    </p>
+                                    <sm>Fin de formation en Mars 2020</sm>
+                                    <br />
+                                    <imp>
+                                        <sm>en cours</sm>
+                                    </imp>
                                 </div>
                             </div>
                             <hr>
@@ -116,44 +112,41 @@
                             </div>
                             <!-- 1er block expérience -->
                             <div class="col-lg-6 col">
-                                <p>
-                                    <t>Stage INOTECH-OI</t><br />
-                                    <md>Bras-Panon</md>
-                                </p>
+                                <t>Stage INOTECH-OI</t>
+                                <br />
+                                <md>Bras-Panon</md>
                             </div>
                             <div class="col-lg-3 col-3">
-                                <p>
-                                    <sm>Octobre 2020 - Janvier 2021</sm>
-                                </p>
+                                <sm>Octobre 2020 - Janvier 2021</sm>
                             </div>
                             <div class="offset-lg-3 col-lg-6 col-12">
+                                <span>Taches effectuées:</span>
                                 <more>
                                     <ul class="list-unstyled">
-                                        <li>Création d'un site web interactif via WordPress</li>
-                                        <li>Mise en place d'un gestionnaire de compte utilisateur avec validation exclusif par l'administrateur</li>
-                                        <li>Ajout d'un planning de réservation d'activités</li> 
+                                        <li>Maquettage des différentes phase du projet</li>
+                                        <li>Participation à l'élaboration et à la création d'une base de données</li>
+                                        <li>Mise en place d'un back office permettant la gestion des agences et des agents d'une société</li>
+                                        <li>Intégration des dispositifs de sécurités (gestion authentification, protection xss, injection SQL)</li> 
                                     </ul>
                                 </more>
                                 <br>
                             </div>
                             <!-- 2eme block expérience -->
                             <div class="offset-lg-3 col-lg-6 col">
-                                <p>
-                                    <t>Stage Digital Coder</t><br />
-                                    <md>Mairie Saint-André</md>
-                                </p>
+                                <t>Stage Digital Coder</t>
+                                <br />
+                                <md>Mairie Saint-André</md>
                             </div>
                             <div class="col-lg-3 col-3">
-                                <p>
-                                    <sm>Février 2020</sm>
-                                </p>
+                                <sm>Février 2020</sm>
                             </div>
                             <div class="offset-lg-3 col-lg-6 col-12">
+                                <span>Taches effectuées:</span>
                                 <more>
                                     <ul class="list-unstyled">
                                         <li>Création d'un site web interactif via WordPress</li>
                                         <li>Mise en place d'un gestionnaire de compte utilisateur avec validation exclusif par l'administrateur</li>
-                                        <li>Ajout d'un planning de réservation d'activités</li> 
+                                        <li>Ajout d'un planning de réservation d'activités pour les utilisateurs</li> 
                                     </ul>
                                 </more>
                                 <br>
@@ -161,23 +154,20 @@
 
                             <!-- 3eme block expérience -->
                             <div class="offset-lg-3 col-lg-6 col ">
-                                <p>
-                                    <t>Gestionnaire du parc automobile</t><br />
-                                    <md>CIREST Saint-Benoît</md>
-                                </p>
+                                <t>Gestionnaire du parc automobile</t><br />
+                                <md>CIREST Saint-Benoît</md>
                             </div>
                             <div class="col-lg-3 col-4">
-                                <p>
-                                    <sm>Mai 2015 - Mai 2017</sm>
-                                </p>
+                                <sm>Mai 2015 - Mai 2017</sm>
                             </div>
                             <div class="offset-lg-3 col-lg-6 col-12">
+                                <span>Travaux accompli:</span>
                                 <more>
                                     <ul class="list-unstyled">
                                         <li>Gestionnaire du planning des réservations</li>
                                         <li>responsable de la gestion des clés de véhicule</li>
-                                        <li>Gestion & relation avec les prestataires de service (location véhicule, Contrôle technique, Garage)</li>
-                                        <li>Porteur de plusieurs projets fonctionnels, pour l'amélioration quotidien du personnels et de l'équipe</li>
+                                        <li>Gestion & relation avec les prestataires de services (location véhicule, Contrôle technique, Garage)</li>
+                                        <li>Porteur de plusieurs projets permettant l'amélioration quotidien du personnels et de l'équipe</li>
                                     </ul>
                                 </more>
                             </div>
@@ -198,16 +188,14 @@
 
                             <!-- 1er block -->
                             <div class="col-lg-6 col">
-                                <p>
-                                    <t>TP Développeur Web et Web Mobile</t><br /> 
-                                    <md>AFPAR Saint-André</md>
-                                </p>
+                                <t>TP Développeur Web et Web Mobile</t><br /> 
+                                <md>AFPAR Saint-André</md>
                             </div>
                             <div class="col-lg-3 col-4">
-                                <p><sm>Juin 2020 - Février 2021</sm></p>
+                                <sm>Juin 2020 - Février 2021</sm>
                             </div>
                             <div class="offset-lg-3 col-lg-6 col-12">
-                                <span>Développer du front-end:</span>
+                                <span>Développement front-end:</span>
                                 <more>
                                     <ul class="list-unstyled">
                                         <li>- Maquetter une application</li>
@@ -215,7 +203,7 @@
                                         <li>- Développer une interface utilisateur dynamique.</li>
                                     </ul>
                                 </more>
-                                <span>Développer du back-end:</span>
+                                <span>Développement back-end:</span>
                                 <more>
                                     <ul class="list-unstyled">
                                         <li>- Concevoir & modéliser une base de données</li>
@@ -224,12 +212,12 @@
                                         <li>- Élaborer et mettre en œuvre des composant d'une application de gestion de contenue ou de e-commerce</li>
                                     </ul>
                                 </more>
-                                <span>Compétence transverses:</span>
+                                <span>Compétences transverses:</span>
                                 <more>
                                     <ul class="list-unstyled">
                                         <li>Utilisation de la langue anglais technique au quotidien</li>
-                                        <li>rédiger les documentations</li>
-                                        <li>gestion de temps ( méthode agile )</li>
+                                        <li>Rédiger la documentation technique</li>
+                                        <li>Gestion des taches et du temps avec un Kanban (méthode agile)</li>
                                     </ul>
                                 </more>
                             <br>
@@ -237,34 +225,31 @@
                             
                             <!-- 2eme block -->
                             <div class="offset-lg-3 col-lg-6 col">
-                                <p>
-                                    <t>Certification Digital Coder</t><br /> 
-                                    <md>AFPAR Saint-André</md>
-                                </p>
+                                <t>Certification Digital Coder</t><br /> 
+                                <md>AFPAR Saint-André</md>
                             </div>
                             <div class="col-lg-3 col-4 ">
-                                <p><sm>Août 2019 - Mars 2020</sm></p>
+                                <sm>Août 2019 - Mars 2020</sm>
                             </div>
                             <div class="offset-lg-3 col-lg-6 col-12">
+                                <span>Déroulement:</span>
                                 <more>
                                     <ul class="list-unstyled">
                                         <li>Découverte du métier de développeur</li>
                                         <li>Découverte des bases du développement web et des algorithmes</li>
                                         <li>Découverte et mise en place de serveur local pour un environnement linux</li>
-                                        <li>Certification des langages suivant : HTML5, CSS3, JavaScript, Bootstrap 4</li>
+                                        <li>Certification des langages suivants : HTML5, CSS3, JavaScript, Bootstrap 4</li>
                                         <li>Découverte des bases du langages PHP 7</li>
                                     </ul>
                                 </more>
                             </div>
                             <br>
                             <div class="offset-lg-3 col-lg-6 col">
-                                <p>
-                                    <t>BP Mécanicien Réparateur Automobile</t><br />
-                                    <md>AFPA Brest</md>
-                                </p>
+                                <t>BP Mécanicien Réparateur Automobile</t><br />
+                                <md>AFPA Brest</md>
                             </div>
                             <div class="col-lg-3 col-4 ">
-                                <p><sm>Octobre 2013 - Avril 2014</sm></p>
+                                <sm>Octobre 2013 - Avril 2014</sm>
                             </div>
                             <div class="offset-lg-3 col-lg-6 col-12">
                                 <more>
@@ -278,13 +263,11 @@
                             </div>
                             <br>
                             <div class="offset-lg-3 col-lg-6 col">
-                                <p>
-                                    <t>BEP Logistique & Commercialisation </t><br />
-                                    <md>FODENO Dieppe</md>
-                                </p>
+                                <t>BEP Logistique & Commercialisation </t><br />
+                                <md>FODENO Dieppe</md>
                             </div>
                             <div class="col-lg-3 col-4 ">
-                                <p><sm>Octobre 2008 - Mai 2009</sm></p>
+                                <sm>Octobre 2008 - Mai 2009</sm>
                             </div>
                             <div class="offset-lg-3 col-lg-6 col-12">
                                 <more>
@@ -299,7 +282,6 @@
                         </div><!--/.row -->
                     </div><!--/.container -->
                 </article><!--/article-->
-            
             </div>
         </section>
 
@@ -309,7 +291,7 @@
                     <br />
                     <h2 class="text-center">************** <i class="fas fa-graduation-cap"></i> **************</h2>
                     <br />
-                    <div class="row align-items-center">
+                    <!-- <div class="row align-items-center">
                         <div class="col-1 font-weight-bold"></div>
                         <div class="progress col-10 m-auto border border-dark px-0 py-0" style="height:20px;">
                             <div class="progress-bar bg-primary" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">Débutant</div>
@@ -318,28 +300,28 @@
                             <div class="progress-bar bg-primary" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">Avancé</div>
                             <div class="progress-bar bg-primary" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">Expert</div>
                         </div>
-                    </div>
+                    </div> -->
                     <br />
                     <div class="column align-items-center">
                         <div class="row align-items-center">
-                        <div class="col-1 px-sm-5 col-lg-1">
-                            <img src="./assets/media/images/logo/html-css.jpg" class="m-auto" alt="html-css_logo" width="80">
-                        </div>
-                        <div class="progress col-2 col-lg-3 border border-dark px-0 py-0" style="height:20px;">
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
+                            <div class="col-1 col-lg-1">
+                                <img src="./assets/media/images/logo/html-css.jpg" class="m-auto" alt="html-css_logo" width="60">
+                            </div>
+                            <div class="progress col-10 m-auto border border-dark px-0 py-0" style="height:20px;">
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
                         </div>
                     <!-- </div> -->
                     <br />
                     <!-- <div class="row align-items-center"> -->
-                        <div class="col-2">
+                        <div class="col-1 col-lg-1">
                             <img src="./assets/media/images/logo/JS.png" alt="JavaScript_logo" width="80">
                         </div>
-                        <div class="progress col-3 col-lg-3 border border-dark px-0 py-0" style="height:20px;">
+                        <div class="progress col-10 m-auto border border-dark px-0 py-0" style="height:20px;">
                             <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                             <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                             <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
@@ -349,10 +331,10 @@
                     <!-- </div> -->
                     <br />
                     <!-- <div class="row align-items-center"> -->
-                        <div class="col-2">
+                        <div class="col-1 col-lg-1">
                             <img src="./assets/media/images/logo/bootstrap_logo.png" alt="BS_logo" width="60">
                         </div>
-                        <div class="progress col-3 col-lg-3 border border-dark px-0 py-0" style="height:20px;">
+                        <div class="progress col-10 m-auto border border-dark px-0 py-0" style="height:20px;">
                             <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                             <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                             <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
@@ -362,20 +344,20 @@
                     </div>
                     <br />
                     <div class="row align-items-center">
-                        <div class="col-1">
+                        <div class="col-1 col-lg-1">
                             <img src="./assets/media/images/logo/wordpress-logo.png" alt="WP_logo" width="80">
                         </div>
                         <div class="progress col-10 m-auto border border-dark px-0 py-0" style="height:20px;">
                             <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                             <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                             <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                             <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                     <br />
                     <div class="row align-items-center">
-                        <div class="col-1">
+                        <div class="col-1 col-lg-1">
                             <img src="./assets/media/images/logo/php.png" alt="PHP_logo" width="80">
                         </div>
                         <div class="progress col-10 m-auto border border-dark px-0 py-0" style="height:20px;">
@@ -390,7 +372,7 @@
                     <!--  exemple test
                         <div class="col-lg-3 col-lg-offset-3 centered">
                             <canvas id="htmlcss" height="130" width="130"></canvas>
-                            <p>HTML/CSS</p>
+                            HTML/CSS
                             <br>
                         </div> -->
                     <hr />
