@@ -47,11 +47,69 @@ p {
     }
 }
 
+/* ***********************************  Barre de navigation **************************** */
+
+.nav-link i {
+    color: rgb(49, 41, 255);
+    font-size: 40px;
+    margin-bottom: 5px;
+
+}
+
+.tabs .active{
+    background: url("./assets/media/images/tab-hover.png") no-repeat;
+}
+
+.navbar-nav {
+
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+.navbar-collapse a {
+    padding-top: 10px;
+    margin: auto;
+    width: 105px;
+    font-size: 15px;
+    margin-right: 15px;
+    display: inline-block;
+    color: #b9b9b9;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.nav-link:hover {
+    animation: bounce 0.5s;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {transform: translateY(5px);} 
+    60% {transform: translateY(-5px);} 
+
+}
+
+@media screen and (max-width: 992px) {
+    .nav-link:hover {
+        animation: bounce 0.0s;
+    }
+}
+
 
 /* ************************************ Vue Profil / affichage en-tete  ************************************** */
 
 article {
-    background: url(./assets/media/images/fond1.jpg) no-repeat center/130%;
+    background: url("./assets/media/images/fond1.jpg") no-repeat center/130%;
 
 }
 
@@ -59,8 +117,6 @@ article {
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
-
-
 
 /* *********************************** Vue Profil 2 / description expérience ************************************* */
 
@@ -113,9 +169,12 @@ span{
 
 .text-decoration-underline {
     text-decoration: underline !important;
-  }
+}
 
-
+#profilGeneral{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
 /* ************************************* Résumé / skill info ************************************* */
 
 
@@ -136,7 +195,10 @@ span{
     font-size: 12px;
 }
 
-
+#contentResumer{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
 
 /****************************  parti diplôme en card *****************************/
 #allcard {
@@ -174,6 +236,10 @@ span{
     transform: scale(1.25);
 }
 
+#portfolioGlobal{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
 
 /* ************************************* Contact Form *********************************** */
 
@@ -189,75 +255,9 @@ t
     font-weight: bold;
 }
 
-
-/* ***********************************  Barre de navigation **************************** */
-
-.nav-link i {
-    color: rgb(49, 41, 255);
-    font-size: 40px;
-    margin-bottom: 5px;
-
-}
-
-
-.tabs .active
-{
-    background: url("./assets/media/images/tab-hover.png") no-repeat;
-}
-
-.navbar-nav {
-
-    width: 60%;
-    text-align: center;
-    margin: auto;
-
-}
-
-
-.navbar-collapse a {
-    padding-top: 10px;
-    margin: auto;
-    width: 105px;
-    font-size: 15px;
-    margin-right: 15px;
-    display: inline-block;
-    color: #b9b9b9;
-    text-align: center;
-    text-transform: uppercase;
-
-}
-
-
-.nav-link:hover {
-    animation: bounce 0.5s;
-}
-
-@keyframes bounce {
-
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-        transform: translateY(0);
-    }
-
-    40% {
-        transform: translateY(-0px)
-    }
-
-    59% {
-        transform: translateY(-5px)
-    }
-
-    9% {
-        transform: translateY(10px)
-    }
-
-    29% {
-        transform: translateY(-20px)
-    }
-
+#contactForm{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
 /* ******************************** Portfolio Page ************************************** */
