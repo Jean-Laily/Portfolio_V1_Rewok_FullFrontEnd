@@ -1,7 +1,7 @@
 /* **************************************** HTML Corps ******************************** */
 
 html,body {
-    background: url(../assets/media/images/86373.jpg) no-repeat ;
+    background: url(../assets/media/images/autre/86373.jpg) no-repeat ;
     background-color: transparent !important; 
     margin: 0px;
     padding: 0px;
@@ -57,7 +57,7 @@ p {
 }
 
 .tabs .active{
-    background: url("./assets/media/images/tab-hover.png") no-repeat;
+    background: url("./assets/media/images/autre/tab-hover.png") no-repeat;
 }
 
 .navbar-nav {
@@ -109,7 +109,7 @@ p {
 /* ************************************ Vue Profil / affichage en-tete  ************************************** */
 
 article {
-    background: url("./assets/media/images/fond1.jpg") no-repeat center/130%;
+    background: url("./assets/media/images/autre/fond1.jpg") no-repeat center/130%;
 
 }
 
@@ -177,16 +177,51 @@ span{
 }
 /* ************************************* Résumé / skill info ************************************* */
 
+#contentResumer{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
 
+.logoTech:not([class*=bg-]) .bg-html{ 
+    color: #ec850e;
+}
+
+.logoTech:not([class*=bg-]) .bg-twig{ 
+    color: #0eec19;
+}
+
+.logoTech:not([class*=bg-]) .bg-css{ 
+    color: #0e49ec;
+}
+
+.logoTech:not([class*=bg-]) .bg-boots{ 
+    color: #630eec;
+}
+
+.logoTech:not([class*=bg-]) .bg-js{ 
+    color: #fac414;
+}
+
+.logoTech:not([class*=bg-]) .bg-php{ 
+    color: #5914fa;
+}
+
+.logoTech:not([class*=bg-]) .bg-java{ 
+    color: #0a8a83;
+}
+
+
+
+/* certificat*/
 #allcard
 {
-    background: url("../assets/media/images/15462mod.jpg") no-repeat right/180%;
+    background: url("../assets/media/images/autre/15462mod.jpg") no-repeat right/180%;
 }
 
 @media screen and (max-width : 992px) {
     #allcard
     {
-        background: url("../assets/media/images/15462mod.jpg") right/80%;
+        background: url("../assets/media/images/autre/15462mod.jpg") right/80%;
     }
 }
 
@@ -195,10 +230,6 @@ span{
     font-size: 12px;
 }
 
-#contentResumer{
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-}
 
 /****************************  parti diplôme en card *****************************/
 #allcard {
