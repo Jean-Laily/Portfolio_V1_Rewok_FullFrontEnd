@@ -34,33 +34,33 @@ $(document).ready(function(){
 
     // changement de texte pour la partie information personnel lors d'un clic sur profil
     function infoPerso(){
-        $("#info-profil").replaceWith("<div class='col-lg-8' id='info-personnel'>"+
+        $("#info-personnel").replaceWith("<div class='col-lg-8 m-auto' id='info-personnel'>"+
                                             "<h3 class='col'>Yan-Sin-Ha-Yeung Jean Laily</h3>"+
                                             "<p class='col'> Développeur Web et Web Mobile </p>"+
-                                            "<p class='col'>Étant un passionné de nouvelle technologie , de l'informatique et de la programmation en générale, il était naturel pour moi de me diriger vers se métier de développeur."+
-                                            "Grâce à l'AFPAR et leur formation passerelle j'ai pu découvrir les bases du développement ce qui m'a permis ensuite permis d'accéder à la formation titrante de niveau V (nouvelle nomenclature)."+
-                                            "Titre professionnel que j'ai obtenu en février 2021, ce qui me permet maintenant de me diriger vers une formation de niveau IV en alternance.</p>"+
+                                            "<p class='col'>Étant un passionné de nouvelle technologie, de l'informatique et de la programmation en générale, je me suis naturellement diriger vers le domaine de développement."+
+                                            " Grâce à l'AFPAR et leur formation passerelle j'ai pu découvrir les bases du développement ce qui m'a permis ensuite permis d'accéder à la formation de niveau V."+
+                                            " J'ai obtenu mon Titre professionnel en février 2021 et aujourd'hui je suis à la recherche de nouvelle opportunité.</p>"+
                                         "</div>");
     };
 
     // changement de texte pour la partie information personnel lors d'un clic sur les autres icônes différente de profil
     function infoPerso2(){
-        $("#info-personnel").replaceWith("<div id='info-profil' class='offset-lg-1 col-lg-8'>"+
-                                            "<article class='col'>"+
-                                                "<h4 class='col text-center'>PROFIL</h4>"+
-                                                "<div class='row'>"+
-                                                    "<ul class='col profil px-0 py-0'>"+
-                                                        "<li><label>Nom: </label> YAN-SIN-HA-YEUNG </li>"+
-                                                        "<li><label>Prénom: </label> Jean Laily</li>"+
-                                                        "<li><label>Email professionnel: </label> jean.yansin@gmail.com</li>"+
+        $("#info-personnel").replaceWith("<div class='col-lg-8 m-auto' id='info-personnel' >"+
+                                            "<article class='row'>"+
+                                                "<h4 class='col-12 pl-0'>PROFIL</h4>"+
+                                                // "<div class='row'>"+
+                                                    "<ul class='col profil pl-0'>"+
+                                                        "<li><t>Nom:</t> <ts> YAN-SIN-HA-YEUNG </ts></li>"+
+                                                        "<li><t>Prénom:</t> <ts> Jean Laily </ts></li>"+
+                                                        "<li><t>Email professionnel:</t> <ts> jean.yansin@gmail.com </ts></li>"+
                                                         
                                                     "</ul>"+
-                                                    "<ul class='col profil px-0 py-0'>"+
-                                                        "<li><label>Age:</label> 35 ans</li>"+
-                                                        "<li><label>Date de naissance: </label> 06/11/1985</li>"+
-                                                        "<li><label>hobby:</label> Développer, découvrir de nouvelle méthode de développement, jeux video</li>"+
+                                                    "<ul class='col profil pr-0'>"+
+                                                        "<li><t>Age:</t> <ts> 35 ans </ts></li>"+
+                                                        "<li><t>Date de naissance:</t> <ts> 06/11/1985 </ts></li>"+
+                                                        "<li><t>Hobby:</t> <ts> Développer, jeux de logique, jeux video </ts></li>"+
                                                     "</ul>"+
-                                                "</div>"+
+                                                // "</div>"+
                                             "</article>"+
                                         "</div>");
     };
