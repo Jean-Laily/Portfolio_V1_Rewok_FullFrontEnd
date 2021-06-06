@@ -34,13 +34,13 @@ $(document).ready(function(){
 
     // changement de texte pour la partie information personnel lors d'un clic sur profil
     function infoPerso(){
-        $("#info-personnel").replaceWith("<div class='col-lg-8 m-auto' id='info-personnel'>"+
+        $("#info-personnel").replaceWith( "<div class='col-lg-8 m-auto' id='info-personnel'>"+
                                             "<h3 class='col'>Yan-Sin-Ha-Yeung Jean Laily</h3>"+
                                             "<p class='col'> Développeur Web et Web Mobile </p>"+
                                             "<p class='col'>Étant un passionné de nouvelle technologie, de l'informatique et de la programmation en générale, je me suis naturellement diriger vers le domaine de développement."+
                                             " Grâce à l'AFPAR et leur formation passerelle j'ai pu découvrir les bases du développement ce qui m'a permis ensuite permis d'accéder à la formation de niveau V."+
                                             " J'ai obtenu mon Titre professionnel en février 2021 et aujourd'hui je suis à la recherche de nouvelle opportunité.</p>"+
-                                        "</div>");
+                                        "</div>" );
     };
 
     // changement de texte pour la partie information personnel lors d'un clic sur les autres icônes différente de profil
@@ -48,11 +48,11 @@ $(document).ready(function(){
         $("#info-personnel").replaceWith("<div class='col-lg-8 m-auto' id='info-personnel' >"+
                                             "<article class='row'>"+
                                                 "<h4 class='col-12 pl-0'>PROFIL</h4>"+
-                                                // "<div class='row'>"+
                                                     "<ul class='col profil pl-0'>"+
                                                         "<li><t>Nom:</t> <ts> YAN-SIN-HA-YEUNG </ts></li>"+
                                                         "<li><t>Prénom:</t> <ts> Jean Laily </ts></li>"+
-                                                        "<li><t>Email professionnel:</t> <ts> jean.yansin@gmail.com </ts></li>"+
+                                                        "<li><t>Email professionnel:</t><ts><a class='text-decoration-none' href='mailto:jean.yansin@gmail.com'> jean yan-sin-ha-yeung</a></ts></li>"+
+                                                        "<li><t>Curriculum vitae:</t> <ts><a class='text-decoration-none' href='assets/media/document/Curriculum_Vitae_YanSinHaYeungJeanLaily.pdf'> Download PDF</a></ts></li>"+
                                                         
                                                     "</ul>"+
                                                     "<ul class='col profil pr-0'>"+
@@ -60,7 +60,6 @@ $(document).ready(function(){
                                                         "<li><t>Date de naissance:</t> <ts> 06/11/1985 </ts></li>"+
                                                         "<li><t>Hobby:</t> <ts> Développer, jeux de logique, jeux video </ts></li>"+
                                                     "</ul>"+
-                                                // "</div>"+
                                             "</article>"+
                                         "</div>");
     };

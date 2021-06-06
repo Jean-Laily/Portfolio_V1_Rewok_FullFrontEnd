@@ -1,7 +1,7 @@
 /* **************************************** HTML Corps ******************************** */
 
 html,body {
-    background: url("../assets/media/images/autre/86373.jpg") no-repeat ;
+    background: url("../assets/media/images/autre/bg-body.jpg") no-repeat left/150%;
     background-color: transparent !important; 
     margin: 0px;
     padding: 0px;
