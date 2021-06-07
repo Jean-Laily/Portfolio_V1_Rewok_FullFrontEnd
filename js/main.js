@@ -1,51 +1,81 @@
 $(document).ready(function(){
-    var arrayProfil = [ "#profilGeneral", "#contentResumer", "#portfolioGlobal", "#contactForm"];
+    var arrayProfil = [ '#profilGeneral', '#contentResumer', '#portfolioGlobal', '#contactForm'];
    
     // lors du chargement de la page tous les contenus tel que ( profil, résumer, portfolio et contact) doivent être cacher.
     hideAllElement();
 
+    /*****************************************************************************************************************
+     *                                          Partie manipulation DOM en jQuery                                                   *
+     * ************************************************************************************************************* */
+
+
     // lors d'un click sur la 1er icône on cache tous les contenus différents de profil
-    $(".icon-1 a").click(function(){
-        let idContenue = "#profilGeneral";
-        infoPerso2();
-        checkContent(idContenue);
+    $('.icon-1 a').click(function(){
+        infoPerso()
+        $("#profilGeneral").fadeToggle(2000);
+        checkContent("#profilGeneral");
     });
 
     // lors d'un click sur la 2eme icône on cache tous les contenus différents de résumer
-    $(".icon-2 a").click(function(){
-        let idContenue = "#contentResumer";
+    $('.icon-2 a').click(function(){
         infoPerso();
-        checkContent(idContenue);
+        $("#contentResumer").fadeToggle(2000);
+        checkContent("#contentResumer");
     });
 
     // lors d'un click sur la 3eme icône on cache tous les contenus différents de portfolio
-    $(".icon-3 a").click(function(){
-        let idContenue = "#portfolioGlobal";
-        infoPerso();
-        checkContent(idContenue);
+    $('.icon-3 a').click(function(){
+        infoPerso()
+        $("#portfolioGlobal").fadeToggle(2000);
+        checkContent("#portfolioGlobal");
     });
 
     // lors d'un click sur la 4eme icône on cache tous les contenus différents de contact
-    $(".icon-4 a").click(function(){
-        let idContenue = "#contactForm";
-        infoPerso();
-        checkContent(idContenue);
+    $('.icon-4 a').click(function(){
+        infoPerso()
+        $("#contactForm").fadeToggle(2000);
+        checkContent("#contactForm");
     });
 
-    // changement de texte pour la partie information personnel lors d'un clic sur profil
-    function infoPerso(){
-        $("#info-personnel").replaceWith( "<div class='col-lg-8 m-auto' id='info-personnel'>"+
-                                            "<h3 class='col'>Yan-Sin-Ha-Yeung Jean Laily</h3>"+
-                                            "<p class='col'> Développeur Web et Web Mobile </p>"+
-                                            "<p class='col'>Étant un passionné de nouvelle technologie, de l'informatique et de la programmation en générale, je me suis naturellement diriger vers le domaine de développement."+
-                                            " Grâce à l'AFPAR et leur formation passerelle j'ai pu découvrir les bases du développement ce qui m'a permis ensuite permis d'accéder à la formation de niveau V."+
-                                            " J'ai obtenu mon Titre professionnel en février 2021 et aujourd'hui je suis à la recherche de nouvelle opportunité.</p>"+
-                                        "</div>" );
-    };
+    // afficher en modal le certificat sélectionné
+    $('#modalViewCertificat').on('show.bs.modal', function(event){
+        var modal= $(event.relatedTarget);
+        var url = modal.data('view-img');
+        var title = $('.card-title').val();
+        console.log(title);
 
-    // changement de texte pour la partie information personnel lors d'un clic sur les autres icônes différente de profil
-    function infoPerso2(){
-        $("#info-personnel").replaceWith("<div class='col-lg-8 m-auto' id='info-personnel' >"+
+        $('#imgCertif').replaceWith("<img id='imgCertif' src="+url+" class='d-block w-75 m-auto' alt='une image' >");
+    });
+
+     // afficher en modal le certificat sélectionné
+     $('#modalViewCertificat').on('show.bs.modal', function(event){
+        var modal= $(event.relatedTarget);
+        var url = modal.data('view-img');
+        var title = $('.card-title').val();
+        console.log(title);
+
+        
+        $('.carousel-inner').append('<div class="carousel-item active">'+
+                                        '<img src="'+ url +'" class="d-block w-100" alt="...">'+
+                                    '</div>');
+    });
+
+    
+
+
+
+
+    /*****************************************************************************************************************
+     *                                          Partie fonction                                                      *
+     * ************************************************************************************************************* */
+
+    /**
+     * M: changement de texte pour la partie information personnel lors d'un clic sur les autres icônes différente de profil
+     * O:
+     * I:
+     */
+    function infoPerso(){
+        $('#info-personnel').replaceWith("<div class='col-lg-8 m-auto' id='info-personnel' >"+
                                             "<article class='row'>"+
                                                 "<h4 class='col-12 pl-0'>PROFIL</h4>"+
                                                     "<ul class='col profil pl-0'>"+
@@ -64,25 +94,27 @@ $(document).ready(function(){
                                         "</div>");
     };
 
+
     /**
-    * Fonction qui à pour but de vérifier si un des id est appeler si c'est bien le cas alors on cache le reste.
+    * M: Fonction qui à pour but de vérifier si un des id est appeler si c'est bien le cas alors on cache le reste.
+    * O:
+    * I:
     */
-    function checkContent(content){
-        var elmtValide;
+     function checkContent(content){
         //lecture du tableau défini plus haut
         arrayProfil.forEach(element => {
-           
-            if(content == element){
-                elmtValide = element;
+            if(content !== element){
+                $(element).hide();
             }
-            $(element).hide();
+
         });
 
-        return $(elmtValide).show();
     }
 
     /**
-     * Permet de ne pas afficher les sections et leurs contenus dès l'ouverture du portfolio
+     * M: Permet de ne pas afficher les sections et leurs contenus dès l'ouverture du portfolio
+     * O:
+     * I:
      */
     function hideAllElement(){
         for(let i = 0; i < arrayProfil.length; i++){
