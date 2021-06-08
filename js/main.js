@@ -51,10 +51,13 @@ $(document).ready(function(){
         var modal= $(event.relatedTarget);
         var url = modal.data('view-img');
         var title = $('.card-title').val();
-        console.log(title);
 
         $('#imgCertif').replaceWith("<img id='imgCertif' src="+url+" class='d-block w-75 m-auto' alt='une image' >");
     });
+
+    $('#modalViewCertificat').on('hide.bs.modal', function(event){ 
+        $('#imgCertif').removeAttr('src');
+    }); 
 
      // afficher en modal le certificat sélectionné
      $('#modalViewCertificat').on('show.bs.modal', function(event){
