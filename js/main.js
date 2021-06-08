@@ -12,28 +12,28 @@ $(document).ready(function(){
     // lors d'un click sur la 1er icône on cache tous les contenus différents de profil
     $('.icon-1 a').click(function(){
         infoPerso()
-        $("#profilGeneral").fadeToggle(2000);
+        $("#profilGeneral").fadeToggle(1000);
         checkContent("#profilGeneral");
     });
 
     // lors d'un click sur la 2eme icône on cache tous les contenus différents de résumer
     $('.icon-2 a').click(function(){
         infoPerso();
-        $("#contentResumer").fadeToggle(2000);
+        $("#contentResumer").fadeToggle(1000);
         checkContent("#contentResumer");
     });
 
     // lors d'un click sur la 3eme icône on cache tous les contenus différents de portfolio
     $('.icon-3 a').click(function(){
         infoPerso()
-        $("#portfolioGlobal").fadeToggle(2000);
+        $("#portfolioGlobal").fadeToggle(1000);
         checkContent("#portfolioGlobal");
     });
 
     // lors d'un click sur la 4eme icône on cache tous les contenus différents de contact
     $('.icon-4 a').click(function(){
         infoPerso()
-        $("#contactForm").fadeToggle(2000);
+        $("#contactForm").fadeToggle(1000);
         checkContent("#contactForm");
     });
 
@@ -76,21 +76,20 @@ $(document).ready(function(){
      */
     function infoPerso(){
         $('#info-personnel').replaceWith("<div class='col-lg-8 m-auto' id='info-personnel' >"+
-                                            "<article class='row'>"+
-                                                "<h4 class='col-12 pl-0'>PROFIL</h4>"+
-                                                    "<ul class='col profil pl-0'>"+
-                                                        "<li><t>Nom:</t> <ts> YAN-SIN-HA-YEUNG </ts></li>"+
-                                                        "<li><t>Prénom:</t> <ts> Jean Laily </ts></li>"+
-                                                        "<li><t>Email professionnel:</t><ts><a class='text-decoration-none' href='mailto:jean.yansin@gmail.com'> jean yan-sin-ha-yeung</a></ts></li>"+
-                                                        "<li><t>Curriculum vitae:</t> <ts><a class='text-decoration-none' href='assets/media/document/Curriculum_Vitae_YanSinHaYeungJeanLaily.pdf'> Download PDF</a></ts></li>"+
-                                                        
-                                                    "</ul>"+
-                                                    "<ul class='col profil pr-0'>"+
-                                                        "<li><t>Age:</t> <ts> 35 ans </ts></li>"+
-                                                        "<li><t>Date de naissance:</t> <ts> 06/11/1985 </ts></li>"+
-                                                        "<li><t>Hobby:</t> <ts> Développer, jeux de logique, jeux video </ts></li>"+
-                                                    "</ul>"+
-                                            "</article>"+
+                                            "<h4 class='pl-0'>PROFIL</h4>"+
+                                            "<div class='row'>"+
+                                                "<ul class='col list-unstyled'>"+
+                                                    "<li><t>Nom:</t> <ts> YAN-SIN-HA-YEUNG </ts></li>"+
+                                                    "<li><t>Prénom:</t> <ts> Jean Laily </ts></li>"+
+                                                    "<li><t>Email professionnel:</t><ts><a class='text-decoration-none' href='mailto:jean.yansin@gmail.com'> jean yan-sin-ha-yeung</a></ts></li>"+
+                                                    "<li><t>Curriculum vitae:</t> <ts><a class='text-decoration-none' href='assets/media/document/Curriculum_Vitae_YanSinHaYeungJeanLaily.pdf'> Download PDF</a></ts></li>"+
+                                                "</ul>"+
+                                                "<ul class='col list-unstyled pr-0'>"+
+                                                    "<li><t>Age:</t> <ts> 35 ans </ts></li>"+
+                                                    "<li><t>Date de naissance:</t> <ts> 06/11/1985 </ts></li>"+
+                                                    "<li><t>Hobby:</t> <ts> Développer, jeux de logique, jeux video </ts></li>"+
+                                                "</ul>"+
+                                            "</div>"+
                                         "</div>");
     };
 

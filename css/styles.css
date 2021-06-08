@@ -1,7 +1,7 @@
 /* **************************************** HTML Corps ******************************** */
 
 html,body {
-    background: url("../assets/media/images/autre/bg-body.jpg") no-repeat left/150%;
+    background: url("../assets/media/images/autre/bg-body.jpg") no-repeat ;
     background-color: transparent !important; 
     margin: 0px;
     padding: 0px;
@@ -15,27 +15,23 @@ html,body {
     background-color: transparent;
 
 }
+
 .container
 {
     background-color: white;
-}
-
-section .group-content{
-    transition: 3s;
 }
 
 
 /********************************* Haut de page ******************************************/
 
 #photo-inner {
-    border: 2px solid silver;
+    box-shadow: 5px 0px 20px black;
 }
 
 p {
     line-height: 28px;
     margin-bottom: 25px;
 }
-
 
 @media screen and (max-width: 992px) {
     #photo-inner {
@@ -60,10 +56,9 @@ p {
 
 }
 
-#tabs li .active{
-    /* background: url("../assets/media/images/autre/tab-hover.png") no-repeat; */
-    border-style: none;   
-}
+/* #tabs li{
+    box-shadow: 5px 0px 20px black;
+} */
 
 .navbar-nav {
 
@@ -87,6 +82,7 @@ p {
 
 .nav-link:hover {
     animation: bounce 0.5s;
+    box-shadow: 5px 0px 20px black;
 }
 
 @keyframes bounce {
@@ -114,6 +110,8 @@ p {
 /* ************************************ Vue Profil / affichage en-tete  ************************************** */
 
 #menu{
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
@@ -164,10 +162,6 @@ span{
     margin-top: 20px;
 }
 
-.profil {
-    list-style: none;
-}
-
 .profil label {
     font-weight: bold;
 }
@@ -179,12 +173,16 @@ span{
 #profilGeneral{
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 /* ************************************* Résumé / skill info ************************************* */
 
 #contentResumer{
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 .logoTech:not([class*=bg-]) .bg-html{ 
@@ -240,6 +238,8 @@ span{
 #portfolioGlobal{
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 #portfolioGlobal h4,h2
@@ -270,6 +270,8 @@ t
 #contactForm{
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 @media screen and (max-width : 992px) {

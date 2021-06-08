@@ -18,24 +18,24 @@
 <body class="d-flex flex-column h-100">
     <main class="flex-shrink-0">
 
-        <!-- Affichage Profil + photo -->
-        <section class="container">
+        <!-- Affichage Profil/photo/navbar -->
+        <section id="menu" class="container shadow-lg">
+            <!-- en tête -->
             <header class="row col">
-                <div class="col-lg-2 mt-3 ml-3">
-                    <a href="index.html"><img id="photo-inner" src="./assets/media/images/autre/moi.jpg" alt="un homme" height="150" width="150"></a>
+                <!-- photo -->
+                <div class="col-lg-2 mt-3 ml-3 ">
+                    <a href="index.html" ><img id="photo-inner" class="rounded-circle" src="./assets/media/images/autre/moi.jpg" alt="un homme" height="180" width="180" /></a>
                 </div>
                 <!-- /********************* partie info personnel *****************************/-->
                 <div class='col-lg-8 m-auto' id='info-personnel'>
                     <h3 class='col'>Yan-Sin-Ha-Yeung Jean Laily</h3>
                     <p class='col'> Développeur Web et Web Mobile </p>
-                    <p class='col'>Étant un passionné de nouvelle technologie, de l'informatique et de la programmation en générale, je me suis naturellement diriger vers le domaine de développement. Grâce à l'AFPAR et leur formation passerelle j'ai pu découvrir les bases du développement ce qui m'a permis ensuite d'accéder à la formation de niveau V. J'ai obtenu mon Titre professionnel en février 2021 et aujourd'hui je suis à la recherche de nouvelle opportunité.</p>
+                    <p class='col'>Étant un passionné de nouvelle technologie,de programmation et de l'informatique en générale, je me suis naturellement diriger vers ce domaine qu'est le développement. Je remercie l'AFPAR et leurs formations passerelle car j'ai pu découvrir le métier de développeur et en acquérir les bases, j'ai ensuite continuer dans la formation de niveau V ou j'ai obtenu mon titre professionnel en février 2021.</p>
+                    <p class='col'>Aujourd'hui, je suis à la recherche de nouvelle opportunité.</p>
                 </div>
             </header>
-        </section>
-        
-        <!-- Affichage Barre de navigation -->
-        <section id="menu" class="container">
-            <nav class="navbar navbar-expand-lg navbar-light m-auto nav-tabs">
+            <!-- barre de navigation -->
+            <nav  class="navbar navbar-expand-lg navbar-light nav-tabs ">
                 <div class="col-12 px-0 py-0 menuDrop d-lg-none d-md-block">
                 <a class="navbar-brand .d-none .d-md-block " href="#">Menu</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,39 +44,35 @@
                 </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul id="tabs" class="navbar-nav col-lg-12 justify-content-center">
-                        <li class="nav-item col-lg-1 col-2 icon-1 mx-2 px-0">
+                        <li class="nav-item col-lg-1 col-2 icon-1 mx-2 px-0 rounded-bottom rounded-top active">
                             <a class="nav-link" href="#"><i class="fas fa-user iconeBar d-none d-lg-block"></i>
                                 <div class="text-left text-lg-center active">Profil</div>
                             </a>
                         </li>
-                        <li class="nav-item col-lg-1 col-2 icon-2 mx-2 px-0">
+                        <li class="nav-item col-lg-1 col-2 icon-2 mx-2 px-0 rounded-bottom rounded-top">
                             <a class="nav-link " href="#"><i class="fas fa-award iconeBar d-none d-lg-block"></i>
                                 <div class="text-left text-lg-center">Résumer</div>
                             </a>
                         </li>
-                        <li class="nav-item col-lg-1 col-2 icon-3 mx-2 px-0">
+                        <li class="nav-item col-lg-1 col-2 icon-3 mx-2 px-0 rounded-bottom rounded-top">
                             <a class="nav-link" href="#"><i class="fab fa-wpexplorer iconeBar d-none d-lg-block"></i>
                                 <div class="text-left text-lg-center">Portfolio</div>
                             </a>
                         </li>
-                        <li class="nav-item col-lg-1 col-2 icon-4 mx-2 px-0">
+                        <li class="nav-item col-lg-1 col-2 icon-4 mx-2 px-0 rounded-bottom rounded-top">
                             <a class="nav-link" href="#"><i class="fas fa-paper-plane iconeBar d-none d-lg-block"></i>
                                 <div class="text-left text-lg-center">Contact</div>
                             </a>
                         </li>
                     </ul>
-
-                   
                 </div>
             </nav>
         </section>
-
+        
         <!-- Affichage Expérience + diplôme -->
-        <section id="profilGeneral" class="container">
+        <section id="profilGeneral" class="container mb-5 shadow-lg">
             <div class="group-content">
-                <br>
-                <h2 class="col-12 text-primary">************** <i class="fas fa-marker"></i> **************</h2>
-                <br>
+                <h2 class="col-12 text-primary pt-4 py-lg-5">************** <i class="fas fa-marker"></i> **************</h2>
                 <article>
                     <!-- Formation Actuellement -->
                     <!-- <div id="resumer" name="resume">
@@ -292,12 +288,11 @@
         </section>
 
         <!-- Affichage Compétences technologique + Certificat -->
-        <section id="contentResumer" class="container">
-            <!--SKILLS DESCRIPTION -->
+        <section id="contentResumer" class="container mb-5 shadow-lg">
             <div class="group-content">
-                <br />
-                <h2 class="col-12 text-primary">**************<i class="fas fa-graduation-cap"></i>**************</h2>
-                <br />
+                <h2 class="col-12 text-primary pt-4 py-lg-5">**************<i class="fas fa-graduation-cap"></i>**************</h2>
+
+                <!--SKILLS DESCRIPTION -->
                 <div class="column px-0 py-0">
                     <div class="row align-items-center">
                         <!-- colone de gauche -->
@@ -440,8 +435,8 @@
                     </div><!-- fin de row 4 -->
                 </div>
 
-                <br />
-
+                <br /> 
+                <!-- Certificat img -->
                 <div id="allcard" class="row justify-content-center">
                     <div class="card-1 col-lg-4 text-center">
                         <a href="#" title="Agrandir" data-toggle="modal" data-target="#modalViewCertificat" data-view-img="assets/media/images/certificat/CR2.jpg"><img src="assets/media/images/certificat/CR2.jpg" class="card-img-top" alt="certificat"></a>
@@ -513,11 +508,9 @@
         </section>
 
         <!-- Affichage des différents projets réalisés en DC + à venir DWWM -->
-        <section id="portfolioGlobal" class="container">
+        <section id="portfolioGlobal" class="container mb-5 shadow-lg">
             <div class="group-content">
-                <br> <!-- espacement -->
-                <h2 class="col-12 text-primary">************** <i class="fas fa-box-open"></i> **************</h2>
-                <br>
+                <h2 class="col-12 text-primary pt-4 py-lg-5">************** <i class="fas fa-box-open"></i> **************</h2>
                 <div class="row m-auto py-5 text-center">
                     <div class="col"><!-- block start-->
                         <h5>[TPs]Projet Excel</h5>
@@ -643,11 +636,9 @@
         </section>
 
         <!-- Affichage partie contact + information personnel -->
-        <section id="contactForm" class="container">
+        <section id="contactForm" class="container mb-5 shadow-lg">
             <div class="group-content">
-                <br/>
-                <h2 class="col-12 text-primary">************** <i class="fas fa-mail-bulk"></i> **************</h2>
-                <br/>
+                <h2 class="col-12 pt-4 py-lg-5 text-primary">************** <i class="fas fa-mail-bulk"></i> **************</h2>
                 <div class="row justify-content-center mb-5"><!--row -->                    
                     <div id="infocontact" class="col col-lg-5 text-center text-lg-left">
                         <h5>ME CONTACTER</h5>
@@ -691,9 +682,9 @@
             </div>
         </section>
 
-        <footer class="footer text-white-50 mt-auto py-3 bg-dark fixed-bottom">
+        <footer class="footer text-white-50 py-md-3 bg-dark fixed-bottom ">
             <div class="text-center">
-                <small>Copyright &copy; 2021 Tous droits réservés. by <em> Jean Laily YAN-SIN-HA-YEUNG.</em></small>
+                <small>Copyright &copy; 2021 | Tous droits réservés par Jean Laily YAN-SIN-HA-YEUNG</small>
             </div>
         </footer>
         
