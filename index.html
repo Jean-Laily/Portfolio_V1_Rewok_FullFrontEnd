@@ -21,7 +21,7 @@
         <!-- Affichage Profil/photo/navbar -->
         <section id="menu" class="container shadow-lg">
             <!-- en tête -->
-            <header class="row col">
+            <header class="row col mx-0 px-0">
                 <!-- photo -->
                 <div class="col-lg-2 mt-3 ml-3 ">
                     <a href="index.html" ><img id="photo-inner" class="rounded-circle" src="./assets/media/images/autre/moi.jpg" alt="un homme" height="180" width="180" /></a>
@@ -35,32 +35,32 @@
                 </div>
             </header>
             <!-- barre de navigation -->
-            <nav  class="navbar navbar-expand-lg navbar-light nav-tabs ">
-                <div class="col-12 px-0 py-0 menuDrop d-lg-none d-md-block">
-                <a class="navbar-brand .d-none .d-md-block " href="#">Menu</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <div class="navbar-toggler-icon"></div>
-                </button>
+            <nav class="navbar navbar-expand-lg navbar-light nav-tabs offset-lg-3 col-lg-6 justify-content-lg-center">
+                <div class="col px-0 py-0 menuDrop d-lg-none d-md-block">
+                    <a class="navbar-brand .d-none .d-md-block " href="#">Menu</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="navbar-toggler-icon"></div>
+                    </button>
                 </div>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul id="tabs" class="navbar-nav col-lg-12 justify-content-center">
-                        <li class="nav-item col-lg-1 col-2 icon-1 mx-2 px-0 rounded-bottom rounded-top active">
-                            <a class="nav-link" href="#"><i class="fas fa-user iconeBar d-none d-lg-block"></i>
-                                <div class="text-left text-lg-center active">Profil</div>
+                <div class="collapse navbar-collapse col-lg-12 justify-content-lg-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav col-lg-11 px-0 justify-content-lg-around ">
+                        <li class="nav-item icon-1 rounded-lg">
+                            <a class="nav-link mr-lg-0" href="#"><i class="fas fa-user iconeBar d-none d-lg-block"></i>
+                                <div class="text-left text-lg-center">Profil</div>
                             </a>
                         </li>
-                        <li class="nav-item col-lg-1 col-2 icon-2 mx-2 px-0 rounded-bottom rounded-top">
-                            <a class="nav-link " href="#"><i class="fas fa-award iconeBar d-none d-lg-block"></i>
+                        <li class="nav-item icon-2 rounded-lg">
+                            <a class="nav-link mr-lg-0" href="#"><i class="fas fa-award iconeBar d-none d-lg-block"></i>
                                 <div class="text-left text-lg-center">Résumer</div>
                             </a>
                         </li>
-                        <li class="nav-item col-lg-1 col-2 icon-3 mx-2 px-0 rounded-bottom rounded-top">
-                            <a class="nav-link" href="#"><i class="fab fa-wpexplorer iconeBar d-none d-lg-block"></i>
+                        <li class="nav-item icon-3 rounded-lg">
+                            <a class="nav-link mr-lg-0" href="#"><i class="fab fa-wpexplorer iconeBar d-none d-lg-block"></i>
                                 <div class="text-left text-lg-center">Portfolio</div>
                             </a>
                         </li>
-                        <li class="nav-item col-lg-1 col-2 icon-4 mx-2 px-0 rounded-bottom rounded-top">
-                            <a class="nav-link" href="#"><i class="fas fa-paper-plane iconeBar d-none d-lg-block"></i>
+                        <li class="nav-item icon-4 rounded-lg">
+                            <a class="nav-link mr-lg-0" href="#"><i class="fas fa-paper-plane iconeBar d-none d-lg-block"></i>
                                 <div class="text-left text-lg-center">Contact</div>
                             </a>
                         </li>
@@ -72,7 +72,7 @@
         <!-- Affichage Expérience + diplôme -->
         <section id="profilGeneral" class="container mb-5 shadow-lg">
             <div class="group-content">
-                <h2 class="col-12 text-primary pt-4 py-lg-5">************** <i class="fas fa-marker"></i> **************</h2>
+                <h2 class="col-12 text-primary py-lg-4 mb-lg-0 d-none d-sm-block">************** <i class="fas fa-marker"></i> **************</h2>
                 <article>
                     <!-- Formation Actuellement -->
                     <!-- <div id="resumer" name="resume">
@@ -97,7 +97,7 @@
                             <hr>
                         </div> 
                     </div> -->
-                    <div class="container exp"><!-- Expériences -->
+                    <div class="container exp pt-4 px-0"><!-- Expériences -->
                         <div class="row ">
                             <div class="col-lg-2 offset-lg-1">
                                 <h5 class="row align-content-center text-decoration-underline">
@@ -111,7 +111,7 @@
                                 <md>Bras-Panon</md>
                             </div>
                             <div class="col-lg-3 col-3">
-                                <sm>Octobre 2020 - Janvier 2021</sm>
+                                <sm>Oct 2020 - Jan 2021</sm>
                             </div>
                             <div class="offset-lg-3 col-lg-6 col-12">
                                 <span>Tâches effectuées:</span>
@@ -132,7 +132,7 @@
                                 <md>Saint-André Service DRE </md>
                             </div>
                             <div class="col-lg-3 col-3">
-                                <sm>Janvier 2020 - Février 2020</sm>
+                                <sm>Jan 2020 - Fév 2020</sm>
                             </div>
                             <div class="offset-lg-3 col-lg-6 col-12">
                                 <span>Tâches effectuées:</span>
@@ -185,7 +185,7 @@
                                 <md>AFPAR - Saint-André</md>
                             </div>
                             <div class="col-lg-3 col-4">
-                                <sm>Juin 2020 - Février 2021</sm>
+                                <sm>Juin 2020 - Fév 2021</sm>
                             </div>
                             <div class="offset-lg-3 col-lg-6 col-12">
                                 <span>Développement front-end:</span>
@@ -244,7 +244,7 @@
                                 <md>AFPA - Brest</md>
                             </div>
                             <div class="col-lg-3 col-4 ">
-                                <sm>Octobre 2013 - Avril 2014</sm>
+                                <sm>Oct 2013 - Avr 2014</sm>
                             </div>
                             <div class="offset-lg-3 col-lg-6 col-12">
                                 <span>Connaissance acquise:</span>
@@ -265,7 +265,7 @@
                                 <md>FODENO Dieppe</md>
                             </div>
                             <div class="col-lg-3 col-4 ">
-                                <sm>Octobre 2008 - Mai 2009</sm>
+                                <sm>Oct 2008 - Mai 2009</sm>
                             </div>
                             <div class="offset-lg-3 col-lg-6 col-12">
                                 <span>Connaissance acquise:</span>
@@ -290,149 +290,155 @@
         <!-- Affichage Compétences technologique + Certificat -->
         <section id="contentResumer" class="container mb-5 shadow-lg">
             <div class="group-content">
-                <h2 class="col-12 text-primary pt-4 py-lg-5">**************<i class="fas fa-graduation-cap"></i>**************</h2>
+                <h2 class="col-12 text-primary py-lg-4 mb-lg-0 d-none d-sm-block">**************<i class="fas fa-graduation-cap"></i>**************</h2>
 
                 <!--SKILLS DESCRIPTION -->
-                <div class="column px-0 py-0">
-                    <div class="row align-items-center">
+                <div class="row ">
+                    <div class="column col col-lg-6 ">
                         <!-- colone de gauche -->
-                        <div class="col col-lg-1 logoTech text-center pr-0">
-                            <t class="">HTML 5</t>
-                            <i class="fab fa-html5 fa-3x bg-html"></i>
+                        <div class="row align-items-center pb-lg-3">
+                            <div class="col offset-lg-1 col-lg-2 logoTech text-center pr-0">
+                                <t class="">HTML 5</t>
+                                <i class="fab fa-html5 fa-3x bg-html d-none d-sm-block"></i>
+                            </div>
+                            <div class="progress col-lg-6 border border-dark px-0 py-0 " style="height:20px;">
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
                         </div>
-                        <div class="progress col-lg-3 border border-dark px-0 py-0 " style="height:20px;">
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                        <!-- colone de gauche -->
+                        <div class="row align-items-center pb-lg-3">
+                            <div class="col offset-lg-1 col-lg-2 logoTech text-center pr-0">
+                                <t class="">CSS 3</t>
+                                <i class="fab fa-css3-alt fa-3x bg-css d-none d-sm-block"></i>
+                            </div>
+                            <div class="progress col-lg-6 border border-dark px-0 py-0 " style="height:20px;">
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
                         </div>
-
-                        <!-- colone de droite -->
-                        <div class="offset-lg-3 col col-lg-1 logoTech text-center pr-0">
-                            <t class="d-none d-sm-block">TWIG</t>
-                            <i class="fab fa-pagelines fa-3x bg-twig"></i>
+                        <!-- colone de gauche -->
+                        <div class="row align-items-center pb-lg-3">
+                            <div class="col offset-lg-1 col-lg-2 logoTech text-center pr-0">
+                                <t class="">JavaScript</t>
+                                <i class="fab fa-js-square fa-3x bg-js d-none d-sm-block"></i>
+                            </div>
+                            <div class="progress col-lg-6 border border-dark px-0 py-0" style="height:20px;">
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
                         </div>
-                        <div class="progress col-lg-3 border border-dark px-0 py-0 " style="height:20px;">
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                         <!-- colone de gauche -->
+                         <div class="row align-items-center pb-lg-3">
+                            <div class="col offset-lg-1 col-lg-2 logoTech text-center pr-0">
+                                <t class="">PHP</t>
+                                <i class="fab fa-php fa-3x bg-php d-none d-sm-block"></i>
+                            </div>
+                            <div class="progress col-lg-6 border border-dark px-0 py-0" style="height:20px;">
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <!-- colone de gauche -->
+                        <div class="row align-items-center pb-lg-3">
+                            <div class="col offset-lg-1 col-lg-2 logoTech text-center pr-0">
+                                <t class="">JAVA|Oracle</t>
+                                <i class="fab fa-java fa-3x bg-java d-none d-sm-block"></i>
+                            </div>
+                            <div class="progress col-lg-6 border border-dark px-0 py-0" style="height:20px;">
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
                         </div>
                     </div> <!-- fin de row 1 -->
                     <br>
-                    <div class="row align-items-center">
-                        <!-- colone de gauche -->
-                        <div class="col col-lg-1 logoTech text-center pr-0">
-                            <t class="d-none d-sm-block">CSS 3</t>
-                            <i class="fab fa-css3-alt fa-3x bg-css"></i>
-                        </div>
-                        <div class="progress col-lg-3 border border-dark px-0 py-0 " style="height:20px;">
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        
+                    <div class="column col col-lg-6 align-items-center">
                         <!-- colone de droite -->
-                        <div class="offset-lg-3 col col-lg-1 logoTech text-center pr-0">
-                            <t class="d-none d-sm-block">Bootstrap</t>
-                            <i class="fab fa-bootstrap fa-3x bg-boots"></i>
+                        <div class="row align-items-center pb-lg-3">
+                            <div class=" offset-lg-2 col col-lg-2 logoTech text-center pr-0">
+                                <t class="">TWIG</t>
+                                <i class="fab fa-pagelines fa-3x bg-twig d-none d-sm-block"></i>
+                            </div>
+                            <div class="progress col-lg-6 border border-dark px-0 py-0 " style="height:20px;">
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
                         </div>
-                        <div class="progress col-lg-3 border border-dark px-0 py-0" style="height:20px;">
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                        <!-- colone de droite -->
+                        <div class="row align-items-center pb-lg-3">
+                            <div class=" offset-lg-2 col col-lg-2 logoTech text-center pr-0">
+                                <t class="">Bootstrap</t>
+                                <i class="fab fa-bootstrap fa-3x bg-boots d-none d-sm-block"></i>
+                            </div>
+                            <div class="progress col-lg-6 border border-dark px-0 py-0" style="height:20px;">
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <!-- colone de droite -->
+                        <div class="row align-items-center pb-lg-3">
+                            <div class=" offset-lg-2 col col-lg-2 logoTech text-center pr-0">
+                                <t class="">jQuery</t>
+                                <i class="fab fa-js fa-3x bg-js d-none d-sm-block"></i> 
+                            </div>
+                            <div class="progress col-lg-6 border border-dark px-0 py-0" style="height:20px;">
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <!-- colone de droite -->
+                        <div class="row align-items-center pb-lg-3">
+                            <div class=" offset-lg-2 col col-lg-2 logoTech text-center pr-0">
+                                <t class="">Symfony</t>
+                                <i class="fab fa-symfony fa-3x bg-symfony d-none d-sm-block"></i> 
+                            </div>
+                            <div class="progress col-lg-6 border border-dark px-0 py-0" style="height:20px;">
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>  
+                        <!-- colone de droite -->
+                        <div class="row align-items-center pb-lg-3">
+                            <div class="offset-lg-2 col col-lg-2 logoTech text-center pr-0">
+                                <t class="">WordPress</t>
+                                <i class="fab fa-wordpress fa-3x bg-WP d-none d-sm-block"></i> 
+                            </div>
+                            <div class="progress col-lg-6 border border-dark px-0 py-0" style="height:20px;">
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div> 
                         </div>
                     </div> <!-- fin de row 2 -->
-                    <br />
-                    <div class="row align-items-center">
-                        <!-- colone de gauche -->
-                        <div class="col col-lg-1 logoTech text-center pr-0">
-                            <t class="d-none d-sm-block">JavaScript</t>
-                            <i class="fab fa-js-square fa-3x bg-js"></i>
-                        </div>
-                        <div class="progress col-lg-3 border border-dark px-0 py-0" style="height:20px;">
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-
-                        <!-- colone de droite -->
-                        <div class="offset-lg-3 col col-lg-1 logoTech text-center pr-0">
-                            <t class="d-none d-sm-block">jQuery</t>
-                            <i class="fab fa-js fa-3x bg-js"></i> 
-                        </div>
-                        <div class="progress col-lg-3 border border-dark px-0 py-0" style="height:20px;">
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div> <!-- fin de row 3 -->
-                    <br />
-                    <div class="row align-items-center">
-                        <!-- colone de gauche -->
-                        <div class="col col-lg-1 logoTech text-center pr-0">
-                            <t class="d-none d-sm-block">PHP</t>
-                            <i class="fab fa-php fa-3x bg-php"></i>
-                        </div>
-                        <div class="progress col-lg-3 border border-dark px-0 py-0" style="height:20px;">
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-
-                        <!-- colone de droite -->
-                        <div class="offset-lg-3 col col-lg-1 logoTech text-center pr-0">
-                            <t class="d-none d-sm-block">Symfony</t>
-                            <i class="fab fa-symfony fa-3x bg-symfony"></i> 
-                        </div>
-                        <div class="progress col-lg-3 border border-dark px-0 py-0" style="height:20px;">
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>  
-                    </div><!-- fin de row 4 -->
-                    <br>
-                    <div class="row align-items-center">
-                        <!-- colone de gauche -->
-                        <div class="col col-lg-1 logoTech text-center pr-0">
-                            <t class="d-none d-sm-block">JAVA|Oracle</t>
-                            <i class="fab fa-java fa-3x bg-java"></i>
-                        </div>
-                        <div class="progress col-lg-3 border border-dark px-0 py-0" style="height:20px;">
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-
-                        <!-- colone de droite -->
-                        <div class="offset-lg-3 col col-lg-1 logoTech text-center pr-0">
-                            <t class="d-none d-sm-block">WordPress</t>
-                            <i class="fab fa-wordpress fa-3x bg-WP"></i> 
-                        </div>
-                        <div class="progress col-lg-3 border border-dark px-0 py-0" style="height:20px;">
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-success border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            <div class="progress-bar bg-light border border-dark" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>  
-                    </div><!-- fin de row 4 -->
                 </div>
 
                 <br /> 
@@ -488,12 +494,12 @@
             <div class="modal fade" id="modalViewCertificat" tabindex="-1" role="dialog" aria-labelledby="modalViewCertificat" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
                     <div class="modal-content">
-                        <div class="modal-header">
+                        <!-- <div class="modal-header">
                             <h5 class="modal-title" id="modalViewCertificat">Modal title</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                             </button>
-                        </div>
+                        </div> -->
                         <div class="modal-body">
                             <img id="imgCertif" alt="une image">
                         <div class="modal-footer">
@@ -510,12 +516,12 @@
         <!-- Affichage des différents projets réalisés en DC + à venir DWWM -->
         <section id="portfolioGlobal" class="container mb-5 shadow-lg">
             <div class="group-content">
-                <h2 class="col-12 text-primary pt-4 py-lg-5">************** <i class="fas fa-box-open"></i> **************</h2>
+                <h2 class="col-12 text-primary py-lg-4 mb-lg-0 d-none d-sm-block">************** <i class="fas fa-box-open"></i> **************</h2>
                 <div class="row m-auto py-5 text-center">
                     <div class="col"><!-- block start-->
                         <h5>[TPs]Projet Excel</h5>
                         <div class="m-auto">
-                            <a href="#" title="Visionner moi" data-toggle="modal" data-target="#modalViewProjet" data-view-img="assets/media/images/portFolioProjet/projetExcel" ><img src="assets/media/images/portFolioProjet/projetExcel/devisExcel.jpg" width="300" height="200"></a>
+                            <a href="#" title="Visionner moi" data-toggle="modal" data-target="#modalViewProjet" data-view-img="assets/media/images/portFolioProjet/projetExcel/devisExcel-1.jpg" ><img src="assets/media/images/portFolioProjet/projetExcel/devisExcel-1.jpg" width="300" height="200"></a>
                         </div>
                         <br>
                         <h5>[TPg]Projet Access</h5>
@@ -592,12 +598,12 @@
             <div class="modal fade" id="modalViewProjet" tabindex="-1" role="dialog" aria-labelledby="modalViewProjet" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
                     <div class="modal-content">
-                        <div class="modal-header">
+                        <!-- <div class="modal-header">
                             <h5 class="modal-title" id="modalViewProjet">Modal title</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                             </button>
-                        </div>
+                        </div> -->
                         <div class="modal-body">
                             <!-- carousel/Slider -->
                             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -638,11 +644,10 @@
         <!-- Affichage partie contact + information personnel -->
         <section id="contactForm" class="container mb-5 shadow-lg">
             <div class="group-content">
-                <h2 class="col-12 pt-4 py-lg-5 text-primary">************** <i class="fas fa-mail-bulk"></i> **************</h2>
+                <h2 class="col-12 text-primary py-lg-4 mb-lg-0 d-none d-sm-block">************** <i class="fas fa-mail-bulk"></i> **************</h2>
                 <div class="row justify-content-center mb-5"><!--row -->                    
                     <div id="infocontact" class="col col-lg-5 text-center text-lg-left">
-                        <h5>ME CONTACTER</h5>
-                        <br/> 
+                        <h4 class="mb-4"><span>ME CONTACTER</span></h4>
                         <p>
                             <t>Mes liens sociaux</t><br />
                             <a href="https://www.linkedin.com/in/jean-laily-yan-sin-ha-yeung-b275901a0/"><i class="fab fa-linkedin fa-2x"></i></a>
@@ -650,25 +655,11 @@
                             <a href="https://www.facebook.com/jean.yansin"><i class="fab fa-facebook fa-2x"></i></a>
                         </p>
                         <ul class="list-unstyled">
-                            <li>
-                                <t>Email :</t><a class="text-decoration-none" href="mailto:jean.yansin@gmail.com"><br/> jean.yansin@gmail.com<br/></a>
-                            </li>
-
-                            <li>
-                                <t>Adresse :</t><br/> 2690 Chemin du centre, porte 30 résidence les fougères<br/>
-                            </li>
-
-                            <li>
-                                <t>Code postal :</t><br /> 97440<br/>
-                            </li>
-
-                            <li>
-                                <t>Ville :</t><br/> Saint-André<br/>
-                            </li>
-
-                            <li>
-                                <t>Tel Portable :</t><br/> 0693 61 11 14 <br/>
-                            </li>
+                            <li><t>Email :</t><a class="text-decoration-none" href="mailto:jean.yansin@gmail.com"> jean.yansin@gmail.com</a></li>
+                            <li><t>Adresse :</t> 2690 Chemin du centre, porte 30 Résidence les fougères</li>
+                            <li><t>Code postal :</t> 97440</li>
+                            <li><t>Ville :</t> Saint-André</li>
+                            <li><t>Tel Portable :</t> 0693 61 11 14</li>
                         </ul>                            
                     </div>
                     <div class="col d-none d-md-block">
@@ -682,7 +673,7 @@
             </div>
         </section>
 
-        <footer class="footer text-white-50 py-md-3 bg-dark fixed-bottom ">
+        <footer class="footer text-white-50 py-md-3 bg-dark fixed-bottom d-none d-sm-block">
             <div class="text-center">
                 <small>Copyright &copy; 2021 | Tous droits réservés par Jean Laily YAN-SIN-HA-YEUNG</small>
             </div>

@@ -4,37 +4,46 @@ $(document).ready(function(){
     // lors du chargement de la page tous les contenus tel que ( profil, résumer, portfolio et contact) doivent être cacher.
     hideAllElement();
 
+
     /*****************************************************************************************************************
      *                                          Partie manipulation DOM en jQuery                                                   *
      * ************************************************************************************************************* */
 
-
     // lors d'un click sur la 1er icône on cache tous les contenus différents de profil
     $('.icon-1 a').click(function(){
         infoPerso()
-        $("#profilGeneral").fadeToggle(1000);
-        checkContent("#profilGeneral");
+        $('#profilGeneral').fadeToggle(1000);
+        $('ul li').removeClass('active')
+        $('.icon-1').addClass('active');
+        checkProfil("#profilGeneral");
+
     });
 
     // lors d'un click sur la 2eme icône on cache tous les contenus différents de résumer
     $('.icon-2 a').click(function(){
         infoPerso();
         $("#contentResumer").fadeToggle(1000);
-        checkContent("#contentResumer");
+        $('ul li').removeClass('active')
+        $('.icon-2').addClass('active');
+        checkProfil("#contentResumer");
     });
 
     // lors d'un click sur la 3eme icône on cache tous les contenus différents de portfolio
     $('.icon-3 a').click(function(){
         infoPerso()
         $("#portfolioGlobal").fadeToggle(1000);
-        checkContent("#portfolioGlobal");
+        $('ul li').removeClass('active')
+        $('.icon-3').addClass('active');
+        checkProfil("#portfolioGlobal");
     });
 
     // lors d'un click sur la 4eme icône on cache tous les contenus différents de contact
     $('.icon-4 a').click(function(){
         infoPerso()
         $("#contactForm").fadeToggle(1000);
-        checkContent("#contactForm");
+        $('ul li').removeClass('active')
+        $('.icon-4').addClass('active');
+        checkProfil("#contactForm");
     });
 
     // afficher en modal le certificat sélectionné
@@ -99,7 +108,7 @@ $(document).ready(function(){
     * O:
     * I:
     */
-     function checkContent(content){
+     function checkProfil(content){
         //lecture du tableau défini plus haut
         arrayProfil.forEach(element => {
             if(content !== element){

@@ -47,6 +47,13 @@ p {
     }
 }
 
+#menu{
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
 /* ***********************************  Barre de navigation **************************** */
 
 .nav-link i {
@@ -56,14 +63,26 @@ p {
 
 }
 
-/* #tabs li{
-    box-shadow: 5px 0px 20px black;
-} */
+#navbarSupportedContent .active div{
+    color: blue !important;
+}
+
+@media screen and (min-width: 992px) {
+    #navbarSupportedContent ul{
+
+        border-radius: 10px 10px ; 
+        box-shadow: 0px 0px 7px rgb(219, 219, 219); 
+    }
+
+    #navbarSupportedContent .active{
+        box-shadow: 0px 0px 8px rgb(170, 169, 169);
+        animation: bounce 0.5s;
+    }
+    
+}
 
 .navbar-nav {
-
     width: 60%;
-    text-align: center;
     margin: auto;
 }
 
@@ -72,17 +91,14 @@ p {
     margin: auto;
     width: 105px;
     font-size: 15px;
-    margin-right: 15px;
     display: inline-block;
-    color: #b9b9b9;
     text-align: center;
     text-transform: uppercase;
 
 }
 
-.nav-link:hover {
-    animation: bounce 0.5s;
-    box-shadow: 5px 0px 20px black;
+.nav-tabs .nav-link {
+    border: none !important;
 }
 
 @keyframes bounce {
@@ -106,14 +122,11 @@ p {
     }
 }
 
-
 /* ************************************ Vue Profil / affichage en-tete  ************************************** */
-
-#menu{
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+@media screen and (max-width: 992px) {
+    #menu div, #profilGeneral, #contentResumer, #portfolioGlobal{
+        font-size: 0.8rem;
+    }
 }
 
 /* *********************************** Vue Profil 2 / description expérience ************************************* */
@@ -219,6 +232,7 @@ span{
 #allcard
 {
     border-top: 4px double silver;
+    border-bottom: 4px double silver;
     background: url("../assets/media/images/autre/fondCertificat.jpg") no-repeat right/180%;
 }
 
