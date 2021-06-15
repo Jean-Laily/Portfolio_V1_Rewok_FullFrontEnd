@@ -1,12 +1,14 @@
 /* **************************************** HTML Corps ******************************** */
 
-html,body {
+html{
+    height: 100%;
+}
+
+body {
     background: url("../assets/media/images/autre/bg-body.jpg") no-repeat ;
-    background-color: transparent !important; 
     margin: 0px;
     padding: 0px;
-    min-width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
 }
 
 .logo {
@@ -135,44 +137,38 @@ p {
     padding-top: 50px;
 }
 
-.desc p {
+.desc .p {
     color: #2f2f2f;
 }
 
-.desc t {
+.desc .t {
     color: #34495e;
     font-size: 18px;
     font-weight: 700;
 }
 
-.desc imp {
+.desc .imp {
     padding: 6px;
     color: white;
     background: #34495e;
 }
 
-.desc more {
+.desc .more {
     color: black;
     font-size: 12px;
 }
 
-sm {
+.sm {
     font-size: 13px;
     font-style: italic;
 }
 
-ts{
+.ts{
     font-size: 14px;
 }
 
-md{
+.md{
     font-size: 15px;
-}
-
-span{
-    font-style: oblique;
-    text-decoration: underline;
-    margin-top: 20px;
 }
 
 .profil label {
@@ -261,12 +257,6 @@ span{
     text-align: center;
 }
 
-/* .cadreProjet {
-    border: 2px solid black;
-    width: 303px;
-    opacity: 1;
-} */
-
 /* ************************************* Contact Form *********************************** */
 
 .maps
@@ -274,11 +264,6 @@ span{
     border: 2px solid silver;
     width: 604px;
     height: 455px;
-}
-
-t 
-{
-    font-weight: bold;
 }
 
 #contactForm{
