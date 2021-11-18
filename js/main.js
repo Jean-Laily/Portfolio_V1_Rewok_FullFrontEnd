@@ -52,9 +52,10 @@ $(document).ready(function(){
         var url = modal.data('view-img');
         var title = $('.card-title').val();
 
-        $('#imgCertif').replaceWith("<img id='imgCertif' src="+url+" class='d-block w-75 m-auto' alt='une image' >");
+        $('#imgCertif').replaceWith("<img id='imgCertif' src="+url+" class='d-block w-75 m-auto' alt='un certificat' >");
     });
 
+    // Supprime le dernier certificat afficher dans le modal
     $('#modalViewCertificat').on('hide.bs.modal', function(event){ 
         $('#imgCertif').removeAttr('src');
     }); 
@@ -91,10 +92,10 @@ $(document).ready(function(){
                                             "<h4 class='pl-0'>PROFIL</h4>"+
                                             "<div class='row'>"+
                                                 "<ul class='col list-unstyled'>"+
-                                                    "<li><t>Nom:</t> <ts> YAN-SIN-HA-YEUNG </ts></li>"+
-                                                    "<li><t>Prénom:</t> <ts> Jean Laily </ts></li>"+
-                                                    "<li><t>Email professionnel:</t><ts><a class='text-decoration-none' href='mailto:jean.yansin@gmail.com'> jean yan-sin-ha-yeung</a></ts></li>"+
-                                                    "<li><t>Curriculum vitae:</t> <ts><a class='text-decoration-none' href='assets/media/document/Curriculum_Vitae_YanSinHaYeungJeanLaily.pdf'> Download PDF</a></ts></li>"+
+                                                    "<li><t>Nom: </t> <ts> YAN-SIN-HA-YEUNG </ts></li>"+
+                                                    "<li><t>Prénom: </t> <ts> Jean Laily </ts></li>"+
+                                                    "<li><t>Email professionnel: </t> <ts> <a class='text-decoration-none' href='mailto:jean.yansin@gmail.com'> Jean Yan-Sin-Ha-Yeung</a> </ts> </li>"+
+                                                    "<li><t>Curriculum Vitae: </t><ts> <a class='text-decoration-none' href='assets/media/document/Curriculum_Vitae_YanSinHaYeungJeanLaily.pdf'> Download PDF</a></ts></li>"+
                                                 "</ul>"+
                                                 "<ul class='col list-unstyled pr-0'>"+
                                                     "<li><t>Age:</t> <ts> 35 ans </ts></li>"+

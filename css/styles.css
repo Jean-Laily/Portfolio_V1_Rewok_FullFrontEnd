@@ -5,29 +5,26 @@ html{
 }
 
 body {
-    background: url("../assets/media/images/autre/bg-body.jpg") no-repeat ;
+    background: url("../assets/media/images/autre/bg-body.jpg");
     margin: 0px;
     padding: 0px;
     min-height: 100vh;
+}
+
+.flex-shrink-0{
+    color: rgba(175, 175, 175, 0.925);
 }
 
 .logo {
     position: relative;
     right: 50px;
     background-color: transparent;
-
 }
-
-.container
-{
-    background-color: white;
-}
-
 
 /********************************* Haut de page ******************************************/
 
 #photo-inner {
-    box-shadow: 5px 0px 20px black;
+    box-shadow: 0px 0px 20px rgb(219, 219, 219);
 }
 
 p {
@@ -52,33 +49,35 @@ p {
 #menu{
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+    background-color: #181a1b;
 }
+
+
 
 /* ***********************************  Barre de navigation **************************** */
 
 .nav-link i {
-    color: rgb(49, 41, 255);
+    color: #337df1;
     font-size: 40px;
     margin-bottom: 5px;
-
 }
 
 #navbarSupportedContent .active div{
-    color: blue !important;
+    color: #337df1 !important;
 }
 
 @media screen and (min-width: 992px) {
     #navbarSupportedContent ul{
 
-        border-radius: 10px 10px ; 
-        box-shadow: 0px 0px 7px rgb(219, 219, 219); 
+        border-radius: 10px 10px ;
+        border: none !important;
+        box-shadow: 0px 0px 10px rgb(219, 219, 219);
     }
 
     #navbarSupportedContent .active{
-        box-shadow: 0px 0px 8px rgb(170, 169, 169);
+        box-shadow: 0px 0px 2px rgb(170, 169, 169);
         animation: bounce 0.5s;
+        border: none !important;
     }
     
 }
@@ -101,6 +100,12 @@ p {
 
 .nav-tabs .nav-link {
     border: none !important;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(221, 220, 220, 0.849) !important;
 }
 
 @keyframes bounce {
@@ -132,6 +137,17 @@ p {
 }
 
 /* *********************************** Vue Profil 2 / description expérience ************************************* */
+#profilGeneral{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: #181a1b;
+}
+
+.container{
+    background-color: #181a1b;
+}
 
 .desc {
     padding-top: 50px;
@@ -165,6 +181,7 @@ p {
 
 .ts{
     font-size: 14px;
+
 }
 
 .md{
@@ -179,12 +196,10 @@ p {
     text-decoration: underline !important;
 }
 
-#profilGeneral{
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
+hr {
+    border-top: 1px solid #007bff;
 }
+
 /* ************************************* Résumé / skill info ************************************* */
 
 #contentResumer{
@@ -192,6 +207,7 @@ p {
     border-top-right-radius: 25px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+    background-color: #181a1b;
 }
 
 .logoTech:not([class*=bg-]) .bg-html{ 
@@ -229,7 +245,8 @@ p {
 {
     border-top: 4px double silver;
     border-bottom: 4px double silver;
-    background: url("../assets/media/images/autre/fondCertificat.jpg") no-repeat right/180%;
+    padding-top: 10px;
+    background-color: #181a1b;
 }
 
 .card-body p
@@ -240,7 +257,7 @@ p {
 @media screen and (max-width : 992px) {
     #allcard
     {
-        background: url("../assets/media/images/autre/fondCertificat.jpg") right/100%;
+        /* background: url("../assets/media/images/autre/fondCertificat.jpg") right/100%; */
     }
 }
 
@@ -250,6 +267,7 @@ p {
     border-top-right-radius: 25px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+    background-color: #181a1b;
 }
 
 #portfolioGlobal h4,h2
@@ -258,6 +276,13 @@ p {
 }
 
 /* ************************************* Contact Form *********************************** */
+#contactForm{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: #181a1b;
+}
 
 .maps
 {
@@ -266,12 +291,6 @@ p {
     height: 455px;
 }
 
-#contactForm{
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-}
 
 @media screen and (max-width : 992px) {
     #infoContact{
