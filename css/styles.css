@@ -5,14 +5,14 @@ html{
 }
 
 body {
-    background: url("../assets/media/images/autre/bg-body.jpg");
+    background: url("../assets/media/images/autre/bg-body.jpg") scroll;
     margin: 0px;
     padding: 0px;
     min-height: 100vh;
 }
 
 .flex-shrink-0{
-    color: rgba(175, 175, 175, 0.925);
+    color: rgba(80, 78, 78, 0.925);
 }
 
 .logo {
@@ -24,7 +24,7 @@ body {
 /********************************* Haut de page ******************************************/
 
 #photo-inner {
-    box-shadow: 0px 0px 20px rgb(219, 219, 219);
+    box-shadow: 0px 0px 20px black;
 }
 
 p {
@@ -49,9 +49,12 @@ p {
 #menu{
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    background-color: #181a1b;
+    
 }
 
+t {
+    font-weight: bold;
+}
 
 
 /* ***********************************  Barre de navigation **************************** */
@@ -71,11 +74,11 @@ p {
 
         border-radius: 10px 10px ;
         border: none !important;
-        box-shadow: 0px 0px 10px rgb(219, 219, 219);
+        box-shadow: 0px 0px 10px rgb(36, 36, 36);
     }
 
     #navbarSupportedContent .active{
-        box-shadow: 0px 0px 2px rgb(170, 169, 169);
+        /* box-shadow: 0px 0px 2px rgb(170, 169, 169); */
         animation: bounce 0.5s;
         border: none !important;
     }
@@ -105,7 +108,7 @@ p {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: rgba(221, 220, 220, 0.849) !important;
+    color: rgba(80, 78, 78, 0.87) !important;
 }
 
 @keyframes bounce {
@@ -137,18 +140,17 @@ p {
     }
 }
 
-/* *********************************** Vue Profil 2 / description expérience ************************************* */
-
-#profilGeneral{
+#menu div, #profilGeneral, #contentResumer, #portfolioGlobal{
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    background-color: #181a1b;
 }
 
-.container{
-    background-color: #181a1b;
+/* *********************************** Vue Profil 2 / description expérience ************************************* */
+
+h5,span{
+    color: #2f2f2f;
 }
 
 .desc {
@@ -204,14 +206,6 @@ hr {
 
 /* ************************************* Résumé / skill info ************************************* */
 
-#contentResumer{
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    background-color: #181a1b;
-}
-
 .logoTech:not([class*=bg-]) .bg-html{ 
     color: #ec850e;
 }
@@ -246,10 +240,7 @@ hr {
 
 #allcard
 {
-    border-top: 4px double silver;
-    border-bottom: 4px double silver;
     padding-top: 10px;
-    background-color: #181a1b;
 }
 
 .card-body p
@@ -257,22 +248,7 @@ hr {
     font-size: 12px;
 }
 
-@media screen and (max-width : 992px) {
-    #allcard
-    {
-        /* background: url("../assets/media/images/autre/fondCertificat.jpg") right/100%; */
-    }
-}
-
 /* ******************************** Portfolio Page ************************************** */
-
-#portfolioGlobal{
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    background-color: #181a1b;
-}
 
 #portfolioGlobal h4,h2
 {
@@ -280,13 +256,6 @@ hr {
 }
 
 /* ************************************* Contact Form *********************************** */
-#contactForm{
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    background-color: #181a1b;
-}
 
 .maps
 {
@@ -303,6 +272,10 @@ hr {
 
 iframe{
     border-width: 0px;
+}
+
+h4{
+    text-align: center;
 }
 
 
