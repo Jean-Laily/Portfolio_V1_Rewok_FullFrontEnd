@@ -102,7 +102,6 @@ t {
 }
 
 .nav-tabs .nav-link {
-    border: none !important;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
@@ -251,10 +250,21 @@ hr {
 }
 
 /* ******************************** Portfolio Page ************************************** */
-
-#portfolioGlobal h4,h2
+#portfolioGlobal h2
 {
     text-align: center;
+    
+}
+
+#portfolioGlobal h4,h3
+{
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+.comingsoon{
+    color: red;
 }
 
 /* ************************************* Contact Form *********************************** */
