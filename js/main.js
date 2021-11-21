@@ -98,10 +98,10 @@ $(document).ready(function(){
                                                     "<li><t>Curriculum Vitae: </t><ts> <a class='text-decoration-none' href='assets/media/document/Curriculum_Vitae_YanSinHaYeungJeanLaily.pdf'> Download PDF</a></ts></li>"+
                                                 "</ul>"+
                                                 "<ul class='col list-unstyled pr-0'>"+
-                                                    "<li><t>Age:</t> <ts> 36 ans </ts></li>"+
-                                                    "<li><t>Date de naissance:</t> <ts> 06/11/1985 </ts></li>"+
-                                                    "<li><t>Hobby:</t> <ts> Développer, jeux de logique, jeux vidéo, cuisine japonaise </ts></li>"+
-                                                    "<li><t>Objectif:</t> <ts> Diriger ma propre équipe de développeur en tant que chef de projet </ts></li>"+
+                                                    "<li><t>Age: </t> <ts>36 ans </ts></li>"+
+                                                    "<li><t>Date de naissance: </t> <ts>06/11/1985 </ts></li>"+
+                                                    "<li><t>Hobby: </t> <ts>jeux de logique, jeux vidéo, cuisine japonaise </ts></li>"+
+                                                    "<li><t>Objectif: </t> <ts>Devenir chef de projet </ts></li>"+
                                                 "</ul>"+
                                             "</div>"+
                                         "</div>");
