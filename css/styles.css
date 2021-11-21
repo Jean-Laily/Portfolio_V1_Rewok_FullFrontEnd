@@ -49,7 +49,7 @@ p {
 #menu{
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    
+    box-shadow: 0px 0px 25px rgb(36, 36, 36);
 }
 
 t {
@@ -78,7 +78,7 @@ t {
     }
 
     #navbarSupportedContent .active{
-        /* box-shadow: 0px 0px 2px rgb(170, 169, 169); */
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         animation: bounce 0.5s;
         border: none !important;
     }
@@ -107,6 +107,7 @@ t {
     border-bottom-right-radius: 25px;
 }
 
+/* modification de la couleur des lien de la navbar*/
 .navbar-light .navbar-nav .nav-link {
     color: rgba(80, 78, 78, 0.87) !important;
 }
@@ -135,16 +136,17 @@ t {
 /* ************************************ Vue Profil / affichage en-tete  ************************************** */
 
 @media screen and (max-width: 992px) {
-    #menu div, #profilGeneral, #contentResumer, #portfolioGlobal{
+    #menu div, #profilGeneral, #contentResumer, #portfolioGlobal, #contactForm{
         font-size: 0.8rem;
     }
 }
 
-#menu div, #profilGeneral, #contentResumer, #portfolioGlobal{
+#profilGeneral, #contentResumer, #portfolioGlobal, #contactForm{
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+    box-shadow: 0px 0px 25px rgb(36, 36, 36);
 }
 
 /* *********************************** Vue Profil 2 / description expérience ************************************* */
@@ -257,7 +259,7 @@ hr {
 
 /* ************************************* Contact Form *********************************** */
 
-.maps
+#maps
 {
     border: 2px solid silver;
     width: 604px;
