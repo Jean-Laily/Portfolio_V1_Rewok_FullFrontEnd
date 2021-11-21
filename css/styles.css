@@ -277,6 +277,11 @@ hr {
     
 }
 
+#portfolioGlobal ul
+{
+    font-size: large;
+}
+
 #portfolioGlobal h4,h3
 {
     text-align: center;
