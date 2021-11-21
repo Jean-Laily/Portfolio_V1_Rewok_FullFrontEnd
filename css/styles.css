@@ -5,7 +5,7 @@ html{
 }
 
 body {
-    background: url("../assets/media/images/autre/bg-body.jpg") scroll;
+    background: url("../assets/media/images/autre/background.jpg") ;
     margin: 0px;
     padding: 0px;
     min-height: 100vh;
@@ -44,12 +44,6 @@ p {
     .menuDrop{
         text-align-last:justify;
     }
-}
-
-#menu{
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    box-shadow: 0px 0px 25px rgb(36, 36, 36);
 }
 
 t {
@@ -133,19 +127,46 @@ t {
 }
 
 /* ************************************ Vue Profil / affichage en-tete  ************************************** */
+#menu
+{
+   
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    /* box-shadow: 0px 0px 25px rgb(36, 36, 36); */
+    background: url("../assets/media/images/autre/bg-body.jpg") scroll;
+}
 
 @media screen and (max-width: 992px) {
-    #menu div, #profilGeneral, #contentResumer, #portfolioGlobal, #contactForm{
+    #menu div, #profilGeneral, #contentResumer, #portfolioGlobal, #contactForm
+    {
         font-size: 0.8rem;
     }
 }
 
-#profilGeneral, #contentResumer, #portfolioGlobal, #contactForm{
+#profilGeneral, #contentResumer, #portfolioGlobal, #contactForm
+{
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    box-shadow: 0px 0px 25px rgb(36, 36, 36);
+    box-shadow: 0px 0px 1px rgb(36, 36, 36);
+    background: url("../assets/media/images/autre/bg-body.jpg") scroll;
+}
+
+#profilGeneral h2{
+    text-align: center;
+}
+
+#contentResumer h2{
+    text-align: center;
+}
+
+#contactForm h2{
+    text-align: center;
+}
+
+#profilGeneral span.titre{
+    font-size: 17px;
 }
 
 /* *********************************** Vue Profil 2 / description expérience ************************************* */
