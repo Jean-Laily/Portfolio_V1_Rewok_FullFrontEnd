@@ -100,7 +100,7 @@ $(document).ready(function(){
                                                 "<ul class='col list-unstyled pr-0'>"+
                                                     "<li><t>Age: </t> <ts>36 ans </ts></li>"+
                                                     "<li><t>Date de naissance: </t> <ts>06/11/1985 </ts></li>"+
-                                                    "<li><t>Hobby: </t> <ts>jeux de logique, jeux vidéo, cuisine japonaise </ts></li>"+
+                                                    "<li><t>Hobby: </t> <ts>Jeux vidéo, cuisine et anime japonais </ts></li>"+
                                                     "<li><t>Objectif: </t> <ts>Devenir chef de projet </ts></li>"+
                                                 "</ul>"+
                                             "</div>"+
